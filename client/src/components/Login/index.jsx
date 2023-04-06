@@ -123,6 +123,7 @@ function Login() {
 
           <Grid item xs={12}>
             <TextField
+              id="login-username"
               fullWidth
               label="Username or Email"
               variant="outlined"
@@ -134,6 +135,7 @@ function Login() {
 
           <Grid item xs={12}>
             <TextField
+              id="login-password"
               label="Password"
               variant="outlined"
               fullWidth
@@ -167,6 +169,7 @@ function Login() {
             position="relative"
           >
             <Button
+              id="login-button"
               variant="contained"
               sx={{
                 paddingLeft: "70px",
