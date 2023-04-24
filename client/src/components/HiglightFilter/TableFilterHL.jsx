@@ -15,7 +15,7 @@ import { Table, Input, Button, Space, Tag } from "antd";
 import "../VideoInput/table-video.css";
 import "antd/dist/antd.css";
 import { FacebookShareButton } from "react-share";
-import { FormShareYoutube } from "../flugin";
+import { FormShareYoutube } from "../flugin/index.js";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function TableFilterHL(props) {

@@ -1,2 +1,2 @@
-import userApi from "./user";
+import userApi from "./user.js";
 export { userApi };

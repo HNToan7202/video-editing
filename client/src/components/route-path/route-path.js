@@ -2,17 +2,17 @@ import React from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import ActionsManagement from "../new-action-labeling/actions-management/actions-management";
-import ActionsLabeling from "../new-action-labeling/actions-labeling/actions-labeling";
-import ModelManagement from "../model-management/model-management";
-import ModelConfiguration from "../model-management/model-configuration/model-configuration";
-import VideoManagement from "../video-analytics/videos-management/videos-management";
-import Tournament from "../tournament/tournament";
-import VideoInput from "../VideoInput/video-input";
-import HighlightReview from "../highlight-review";
-import Film from "../Film";
-import HighlightFilter from "../HiglightFilter/highlight-filter";
-import Gallery from "../Gallery";
+import ActionsManagement from "../new-action-labeling/actions-management/actions-management.jsx";
+import ActionsLabeling from "../new-action-labeling/actions-labeling/actions-labeling.jsx";
+import ModelManagement from "../model-management/model-management.jsx";
+import ModelConfiguration from "../model-management/model-configuration/model-configuration.jsx";
+import VideoManagement from "../video-analytics/videos-management/videos-management.jsx";
+import Tournament from "../tournament/tournament.jsx";
+import VideoInput from "../VideoInput/video-input.jsx";
+import HighlightReview from "../highlight-review/index.jsx";
+import Film from "../Film/index.jsx";
+import HighlightFilter from "../HiglightFilter/highlight-filter.jsx";
+import Gallery from "../Gallery/index.jsx";
 
 function RoutePath() {
   return (

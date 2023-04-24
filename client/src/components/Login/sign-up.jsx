@@ -199,7 +199,6 @@ function SignUp() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              id="usernameSignUp"
               label="Username"
               variant="outlined"
               required
@@ -210,7 +209,6 @@ function SignUp() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              id="emailSignUp"
               label="Email"
               variant="outlined"
               required
@@ -222,7 +220,6 @@ function SignUp() {
           <Grid item xs={12}>
             <TextField
               fullWidth
-              id="fullNameSignUp"
               label="Full Name"
               variant="outlined"
               required
@@ -232,7 +229,6 @@ function SignUp() {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              id="passwordSignUp"
               label="Password"
               variant="outlined"
               fullWidth
@@ -268,7 +264,6 @@ function SignUp() {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              id="confirmPasswordSignUp"
               label="Confirm Password"
               variant="outlined"
               fullWidth
@@ -307,7 +302,6 @@ function SignUp() {
             position="relative"
           >
             <Button
-              id="signUpButton"
               variant="contained"
               sx={{
                 paddingLeft: "70px",

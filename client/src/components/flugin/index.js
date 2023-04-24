@@ -1,14 +1,14 @@
-import CheckboxesTags from "./SelectCheckBox";
-import CustomDatePicker from "./DatePicker";
-import CustomSelect from "./Select";
-import TablePagination from "./TablePaging";
-import ConfirmDialog from "./ConfirmDialog";
-import DialogUploadLogo from "./DialogUploadLogo";
-import DialogUploadEvent from "./DialogUploadEvent";
-import DialogMoreEvent from "./LoadMoreEvent";
-import DialogMoreLogo from "./LoadMoreLogo";
-import FormShareYoutube from "./FormShareYouTube";
-import DialogDraggableLogo from "./DraggableLogo";
+import CheckboxesTags from "./SelectCheckBox/index.jsx";
+import CustomDatePicker from "./DatePicker/index.jsx";
+import CustomSelect from "./Select/index.jsx";
+import TablePagination from "./TablePaging/index.jsx";
+import ConfirmDialog from "./ConfirmDialog/index.jsx";
+import DialogUploadLogo from "./DialogUploadLogo/index.jsx";
+import DialogUploadEvent from "./DialogUploadEvent/index.jsx";
+import DialogMoreEvent from "./LoadMoreEvent/index.jsx";
+import DialogMoreLogo from "./LoadMoreLogo/index.jsx";
+import FormShareYoutube from "./FormShareYouTube/index.jsx";
+import DialogDraggableLogo from "./DraggableLogo/index.jsx";
 
 export {
   CheckboxesTags,

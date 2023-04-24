@@ -1,5 +1,5 @@
 import "./App.css";
-import RootRouters from "./components/route-path/RootRoutePath";
+import RootRouters from "./components/route-path/RootRoutePath.js";
 
 function App() {
   return (

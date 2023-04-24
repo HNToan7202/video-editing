@@ -107,7 +107,11 @@ function ResponsiveDrawer(props) {
             </div>
             <div>
               <Tooltip key={1} title="Logout" placement="right">
-                <LogoutIcon sx={iconCollapsed} onClick={handleLogout} />
+                <LogoutIcon
+                  id="logout-button"
+                  sx={iconCollapsed}
+                  onClick={handleLogout}
+                />
               </Tooltip>
             </div>
           </SidebarFooter>

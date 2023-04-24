@@ -15,7 +15,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import background from "./bg.jpg";
 import Cookies from "js-cookie";
-import { userApi } from "../../api";
+import { userApi } from "../../api/index.js";
 
 const style = {
   backgroundImage: `url(${background})`,
@@ -123,8 +123,8 @@ function Login() {
 
           <Grid item xs={12}>
             <TextField
-              id="login-username"
               fullWidth
+              id="login-username"
               label="Username or Email"
               variant="outlined"
               required
