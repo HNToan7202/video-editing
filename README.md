@@ -2,8 +2,8 @@
   <img src="https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png" alt="Example Image">
 </p>
 
-# Nhom13_CCPTPM
-
+# Nhóm 13 Công Cụ Và Phát Triển PM
+# GVHD : Huỳnh Xuân Phụng
 
 # Video Analytics
 
