@@ -3,10 +3,13 @@
 </p>
 
 <h1 align="center">Nhóm 13 Công Cụ Và Phát Triển PM</h1>
+<div>
+  Video Analytics
+  <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
+ </div>
+  
 <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
 
-
-# Video Analytics
 
 Đồ án sử dụng .NET 5.0 để xây dựng web API, dùng ReactJS xây dựng giao diện thân thiện với người dùng, và cơ sở dữ liệu MongoDB
 để lưu trữ dữ liệu. Sau đó áp dụng kiến thức đã được tìm hiểu để xây dựng trang web giúp phân tích, xử lý video về các giải đấu bóng đá.
