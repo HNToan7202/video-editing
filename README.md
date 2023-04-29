@@ -14,7 +14,8 @@
 | Nguyễn Hoàng Toàn       | 20110739 |                      |
 | Nguyễn Công Thành       | 20110267 |                      |
 
-![Logo](https://khaosat.hcmute.edu.vn/assets/img/login-banner.png)
+![image](https://user-images.githubusercontent.com/106101425/235303506-a868ff55-b9a9-424f-9314-0494042d9aac.png)
+
 
 
 
