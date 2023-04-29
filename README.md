@@ -4,6 +4,7 @@
 
 <h1 align="center">Nhóm 13 Công Cụ Và Phát Triển PM</h1>
 <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
+# Video Anaylist
 
 
 Đồ án sử dụng .NET 5.0 để xây dựng web API, dùng ReactJS xây dựng giao diện thân thiện với người dùng, và cơ sở dữ liệu MongoDB
