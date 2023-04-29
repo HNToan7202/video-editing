@@ -3,15 +3,7 @@
 </p>
 
 <h1 align="center">Nhóm 13 Công Cụ Và Phát Triển PM</h1>
-<div>
-  Video Analytics
-  <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
- </div>
-  
 <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
-
-<p style="display: inline-block;">Hello</p>
-<p style="display: inline-block;">World</p>
 
 
 Đồ án sử dụng .NET 5.0 để xây dựng web API, dùng ReactJS xây dựng giao diện thân thiện với người dùng, và cơ sở dữ liệu MongoDB
