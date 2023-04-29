@@ -14,9 +14,9 @@
 | Nguyễn Hoàng Toàn       | 20110739 |                      |
 | Nguyễn Công Thành       | 20110267 |                      |
 
-![image](https://user-images.githubusercontent.com/106101425/235303569-40a6ec8e-ebbf-4608-a0f2-20c3c5860362.png)
-
-
+<p align="center">
+  <img src="[example.png](https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png)" alt="Example Image">
+</p>
 
 
 
