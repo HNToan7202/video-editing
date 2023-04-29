@@ -6,7 +6,7 @@
   Nhóm 13 Công Cụ Và Phát Triển PM
 </h1>
 
-# Nhóm 13 Công Cụ Và Phát Triển PM
+
 ## GVHD : Huỳnh Xuân Phụng
 
 # Video Analytics
