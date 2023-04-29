@@ -1,10 +1,10 @@
 <p align="center">
   <img src="https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png" alt="Example Image">
 </p>
-
+<div>
 <h1 align="center">Nhóm 13 Công Cụ Và Phát Triển PM</h1>
 <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
-
+</div>
 
 # Video Anaylist
 
