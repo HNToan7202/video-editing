@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png" alt="Example Image">
+</p>
+
 # Nhom13_CCPTPM
 
 
@@ -14,9 +18,6 @@
 | Nguyễn Hoàng Toàn       | 20110739 |                      |
 | Nguyễn Công Thành       | 20110267 |                      |
 
-<p align="center">
-  <img src="https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png" alt="Example Image">
-</p>
 
 
 
