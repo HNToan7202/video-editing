@@ -14,7 +14,8 @@
 | Nguyễn Hoàng Toàn       | 20110739 |                      |
 | Nguyễn Công Thành       | 20110267 |                      |
 
-![image](https://user-images.githubusercontent.com/106101425/235303506-a868ff55-b9a9-424f-9314-0494042d9aac.png)
+![image](https://user-images.githubusercontent.com/106101425/235303569-40a6ec8e-ebbf-4608-a0f2-20c3c5860362.png)
+
 
 
 
