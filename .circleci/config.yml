@@ -31,7 +31,7 @@ jobs:
             docker build -t $DOCKERHUB_USERNAME/videodemoserver:latest .
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push $DOCKERHUB_USERNAME/videodemoserver:latest
-          working_directory: /home/circleci/project/server/video-editing-api
+          working_directory: /home/circleci/project/server/video-editing-api/video-editing-api
 workflows:
   build-and-deploy:
     jobs:
