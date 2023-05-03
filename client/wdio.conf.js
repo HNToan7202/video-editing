@@ -1,4 +1,4 @@
-const allure = require("allure-commandline");
+import allure from "allure-commandline";
 export const config = {
   runner: [
     "browser",
@@ -37,7 +37,7 @@ export const config = {
 
   logLevel: "info",
   bail: 0,
-  baseUrl: "http://localhost:8888/",
+  baseUrl: "http://localhost:3000/",
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
 
@@ -48,7 +48,7 @@ export const config = {
       ? [
           "static-server",
           {
-            port: 8888,
+            port: 3000,
             folders: [
               {
                 mount: "/",
@@ -70,6 +70,11 @@ export const config = {
       },
     ],
   ],
+  reporterOptions: {
+    allure: {
+      outputDir: "./allure-results",
+    },
+  },
   mochaOpts: {
     ui: "bdd",
     timeout: 60000,
@@ -83,23 +88,5 @@ export const config = {
     if (error) {
       await browser.takeScreenshot();
     }
-  },
-  onComplete: function () {
-    const reportError = new Error("Could not generate Allure report");
-    const generation = allure(["generate", "allure-results", "--clean"]);
-    return new Promise((resolve, reject) => {
-      const generationTimeout = setTimeout(() => reject(reportError), 5000);
-
-      generation.on("exit", function (exitCode) {
-        clearTimeout(generationTimeout);
-
-        if (exitCode !== 0) {
-          return reject(reportError);
-        }
-
-        console.log("Allure report successfully generated");
-        resolve();
-      });
-    });
   },
 };

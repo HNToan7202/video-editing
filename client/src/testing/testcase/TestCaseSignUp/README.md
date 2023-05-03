@@ -10,6 +10,6 @@ npm install
 ## Thực thi test case đăng ký tài khoản cho dự án
 
 ```sh
-npm run TestCaseSignUp 
+npm run TestSignUp 
 
 ```
