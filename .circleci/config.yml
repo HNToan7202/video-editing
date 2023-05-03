@@ -25,7 +25,7 @@ jobs:
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push $DOCKERHUB_USERNAME/videodemo:latest
           working_directory: /home/circleci/project/client
-       - run:
+      - run:
           name: Build and push Docker image Server
           command: |
             docker build -t $DOCKERHUB_USERNAME/videodemoServer:latest .
