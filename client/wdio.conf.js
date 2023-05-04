@@ -1,7 +1,7 @@
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/specs/**/*.js"],
+  specs: ["./src/test/**/*.js"],
 
   exclude: [],
 
