@@ -13,7 +13,7 @@ COPY ["video-editing-api.csproj", "video-editing-api/video-editing-api/"]
 #RUN dotnet restore "video-editing-api.csproj"
 RUN dotnet restore "video-editing-api/video-editing-api/video-editing-api.csproj"
 COPY . .
-WORKDIR "/src/video-editing-api"
+WORKDIR "/src/video-editing-api/video-editing-api/"
 RUN dotnet build "video-editing-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
