@@ -7,16 +7,19 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["video-editing-api.csproj", "video-editing-api/"]
-RUN dotnet restore "video-editing-api.csproj"
+#COPY ["video-editing-api.csproj", "video-editing-api/"]
+COPY ["server/video-editing-api/video-editing-api.csproj", "server/video-editing-api/"]
+
+#RUN dotnet restore "video-editing-api.csproj"
+RUN dotnet restore "server/video-editing-api/video-editing-api.csproj"
 COPY . .
 WORKDIR "/src/video-editing-api"
 RUN dotnet build "video-editing-api.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "video-editing-api.csproj" -c Release -o /app/publish
+#FROM build AS publish
+#RUN dotnet publish "video-editing-api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/build .
 ENTRYPOINT ["dotnet", "video-editing-api.dll"]
