@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Demo Tests" timestamp="2023-05-04T11:42:48" time="4.732" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Demo Tests"/>
+      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/specs/test1.spec.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_63.windows.Demo_Tests" name="My First Test" time="4.72">
+      <system-out><![CDATA[
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/window/maximize - {}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/element - {"using":"css selector","value":"[name=\"q\"]"}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/url - {"url":"https://google.com/"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"[name=\"q\"]"}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/elements - {"using":"css selector","value":"[name=\"q\"]"}
+RESULT: {"url":"https://google.com/"}
+RESULT: {"using":"css selector","value":"[name=\"q\"]"}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/element - {"using":"css selector","value":"[name=\"q\"]"}
+RESULT: {"using":"css selector","value":"[name=\"q\"]"}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/element/98124b9c-c14f-461c-bbaa-6b09bd70f7f0/clear - {}
+RESULT: {}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/element/98124b9c-c14f-461c-bbaa-6b09bd70f7f0/value - {"text":"WebdriverIO"}
+RESULT: {"text":"WebdriverIO"}
+COMMAND: POST /session/0656af73eba33db60c473f887e166a83/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/0656af73eba33db60c473f887e166a83 - {}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/0656af73eba33db60c473f887e166a83/actions - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
