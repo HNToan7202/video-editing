@@ -1,79 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="My First Recorded Test" timestamp="2023-05-04T21:16:03" time="22.515" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-05T17:31:07" time="20.761" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="My First Recorded Test"/>
-      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/specs/My%20First%20Recorded%20Test.js"/>
+      <property name="suiteName" value="DownloadVideo Test Suite"/>
+      <property name="capabilities" value="chrome.112_0_5615_138.windows"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/testDownloadVideo.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.My_First_Recorded_Test" name="tests My First Recorded Test" time="22.509">
-      <failure/>
-      <error message="The selector &quot;text/Logout&quot; used with strategy &quot;css selector&quot; is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors"/>
+    <testcase classname="chrome.112_0_5615_138.windows.DownloadVideo_Test_Suite" name="Logged in successfully" time="6.601">
       <system-out><![CDATA[
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/window/maximize - {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/window/rect - {"x":null,"y":null,"width":764,"height":689}
-RESULT: {"x":null,"y":null,"width":764,"height":689}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/url - {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/window/maximize - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"http://localhost:3000/"}
 RESULT: {}
-RESULT: {"url":"https://the-internet.herokuapp.com/login"}
-COMMAND: GET /session/23c9c22e8b848eb6d5b079ca3b931b1a/url - {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/2fa1cf87-a347-4d35-9eb2-b30eb017198c/clear - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"xpath","value":"//*[@id=\"content\"]/div/h4/em[1]"}
-RESULT: {"using":"xpath","value":"//*[@id=\"content\"]/div/h4/em[1]"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/2fa1cf87-a347-4d35-9eb2-b30eb017198c/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/aa2987b3-731f-448b-b2bd-31c97db998f6/clear - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
-RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"css selector","value":"#username"}
-RESULT: {"using":"css selector","value":"#username"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/f5b44c70-5b1c-4072-b175-fb1ea8c8595a/click - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/aa2987b3-731f-448b-b2bd-31c97db998f6/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+RESULT: {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/6dd1b072-e063-464a-b652-014697bcb5a0/click - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"css selector","value":"#username"}
-RESULT: {"using":"css selector","value":"#username"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/f5b44c70-5b1c-4072-b175-fb1ea8c8595a/clear - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/53007ba4-be33-40d7-80b9-f92487668190/click - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/f5b44c70-5b1c-4072-b175-fb1ea8c8595a/value - {"text":"tomsmith"}
-RESULT: {"text":"tomsmith"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"xpath","value":"//*[@id=\"content\"]/div/h4/em[2]"}
-RESULT: {"using":"xpath","value":"//*[@id=\"content\"]/div/h4/em[2]"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/d90f83f2-8a41-420d-a5b1-f4458241b3e7/click - {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
-RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"css selector","value":"#password"}
-RESULT: {"using":"css selector","value":"#password"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/ab240804-7c0f-4f2c-9883-89a25dd5516f/click - {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.112_0_5615_138.windows.DownloadVideo_Test_Suite" name="DownloadVideo" time="14.152">
+      <system-out><![CDATA[
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/window/maximize - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"http://localhost:3000/gallery"}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"css selector","value":"#password"}
-RESULT: {"using":"css selector","value":"#password"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/ab240804-7c0f-4f2c-9883-89a25dd5516f/clear - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/ab240804-7c0f-4f2c-9883-89a25dd5516f/value - {"text":"SuperSecretPassword!"}
-RESULT: {"text":"SuperSecretPassword!"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"xpath","value":"//*[@id=\"login\"]/button/i"}
-RESULT: {"using":"xpath","value":"//*[@id=\"login\"]/button/i"}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element/88cc92f3-106d-4b74-90dc-0b5088fe1c5d/click - {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {"url":"http://localhost:3000/gallery"}
 RESULT: {}
-COMMAND: GET /session/23c9c22e8b848eb6d5b079ca3b931b1a/url - {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
 RESULT: {}
-COMMAND: POST /session/23c9c22e8b848eb6d5b079ca3b931b1a/element - {"using":"css selector","value":"text/Logout"}
-COMMAND: GET /session/23c9c22e8b848eb6d5b079ca3b931b1a/screenshot - {}
-COMMAND: DELETE /session/23c9c22e8b848eb6d5b079ca3b931b1a - {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
 RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/element/2fff7555-fccd-4142-82ec-bb22eb41e168/attribute/src - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"https://store.cads.live/projects/6454d8640ca7eb0a3ba25687/raw/video"}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {"url":"https://store.cads.live/projects/6454d8640ca7eb0a3ba25687/raw/video"}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+COMMAND: DELETE /session/5b184dbd483e8cb76fb302066b0e515f - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-invalid selector: The selector "text/Logout" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/specs/My%20First%20Recorded%20Test.js:34:5)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
