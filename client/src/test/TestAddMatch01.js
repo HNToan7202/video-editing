@@ -19,9 +19,8 @@ describe("Add Match", () => {
     const SAVE_BTN = await browser.$("button[type=submit]");
     await browser.pause(1000);
     // thực hiện các bước test
-    ADD_LEAGUENAME.click();
-    await browser.pause(1000);
-    await browser.$(LEAGUE_NAME).setValue("V League");
+    //ADD_LEAGUENAME.click();
+    // await browser.$(LEAGUE_NAME).setValue("V League");
     await browser.$(MATCH_NAME).setValue("HAGL vs SHB");
     await browser.$(TIME).setValue("");
     await browser.$(CHANNEL_NAME).setValue("VTV");
@@ -29,10 +28,10 @@ describe("Add Match", () => {
     await browser.$(PORT).setValue("3000");
     SAVE_BTN.click();
 
-    await browser.pause(3000);
-    await browser.refresh();
-    await browser.pause(3000);
-    await browser.saveScreenshot("./src/testing/AddMatch/caseSuccess.png");
+    await browser.pause(5000);
+    await browser.saveScreenshot(
+      "./src/testing/AddMatch/caseFailNotAddLEAGUE_NAME.png"
+    );
     expect(browser).toHaveTitle("AddMatch");
   });
 });

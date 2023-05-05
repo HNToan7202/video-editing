@@ -1,7 +1,7 @@
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/**/testSignUp.js"],
+  specs: ["./src/test/**/TestAddVideo.js"],
 
   exclude: [],
 
@@ -14,8 +14,13 @@ export const config = {
   capabilities: [
     {
       maxInstances: 5,
-      browserName: "chrome",
-      acceptInsecureCerts: true,
+      // browserName: "chrome",
+      // acceptInsecureCerts: true,
+      browserName: "MicrosoftEdge",
+      // "ms:edgeOptions": {
+      //   args: ["--headless", "--disable-gpu"],
+      //   w3c: false,
+      // },
     },
   ],
 
@@ -31,8 +36,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
-
+  //services: ["chromedriver"],
+  services: ["edgedriver"],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole

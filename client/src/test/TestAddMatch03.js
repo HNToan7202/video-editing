@@ -24,15 +24,17 @@ describe("Add Match", () => {
     await browser.$(LEAGUE_NAME).setValue("V League");
     await browser.$(MATCH_NAME).setValue("HAGL vs SHB");
     await browser.$(TIME).setValue("");
-    await browser.$(CHANNEL_NAME).setValue("VTV");
+    await browser.$(CHANNEL_NAME).setValue("VTV3");
     await browser.$(IP).setValue("127.0.0.1");
     await browser.$(PORT).setValue("3000");
     SAVE_BTN.click();
 
-    await browser.pause(3000);
+    await browser.pause(5000);
     await browser.refresh();
-    await browser.pause(3000);
-    await browser.saveScreenshot("./src/testing/AddMatch/caseSuccess.png");
+    await browser.pause(5000);
+    await browser.saveScreenshot(
+      "./src/testing/AddMatch/caseSucessAddMatchName.png"
+    );
     expect(browser).toHaveTitle("AddMatch");
   });
 });

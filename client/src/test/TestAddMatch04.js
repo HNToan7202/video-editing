@@ -28,7 +28,6 @@ describe("Add Match", () => {
     await browser.$(IP).setValue("127.0.0.1");
     await browser.$(PORT).setValue("3000");
     SAVE_BTN.click();
-
     await browser.pause(3000);
     await browser.refresh();
     await browser.pause(3000);
