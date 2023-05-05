@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuites>
   <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-05T17:31:07" time="20.761" tests="2" failures="0" errors="0" skipped="0">
     <properties>
@@ -94,3 +95,6 @@ RESULT: {}
     </testcase>
   </testsuite>
 </testsuites>
+=======
+<testsuites/>
+>>>>>>> e8d776b158c447fad4a04c615ce236288e57337f

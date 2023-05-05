@@ -80,8 +80,10 @@
     "@wdio/mocha-framework": "^8.8.7",
     "@wdio/spec-reporter": "^8.8.7",
     "chromedriver": "^112.0.0",
+    "edgedriver": "^4.17134.1",
     "geckodriver": "^3.2.0",
     "wdio-chromedriver-service": "^8.1.1",
+    "wdio-edgedriver-service": "^2.1.2",
     "wdio-geckodriver-service": "^4.1.1"
   }
 }
