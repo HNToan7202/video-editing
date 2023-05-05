@@ -12,16 +12,13 @@ jobs:
           name: Test Docker
           command: docker --version
       - run:
-          name: Testing project
-          command: google-chrome --version
+          name: Install Dependencies
+          command: npm install
           working_directory: /home/circleci/project/client
-      # - run:
-      #     name: Start Docker
-      #     command: sudo service docker start
-      # - run:
-      #     name: Install Dependencies
-      #     command: npm install
-      #     working_directory: /home/circleci/project/client
+      - run:
+          name: Testing project
+          command: npm run wdio
+          working_directory: /home/circleci/project/client
       # - run:
       #     name: Build and push Docker image
       #     command: |

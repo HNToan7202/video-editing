@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Add Video" timestamp="2023-05-05T21:47:57" time="93.086" tests="5" failures="5" errors="5" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Add Video"/>
+      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Add AddVideo successfully" time="38.46">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/window/maximize - {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/"}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element/7ad50188-bb32-475b-a06a-2bf95cd75d13/clear - {}
+RESULT: {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element/7ad50188-bb32-475b-a06a-2bf95cd75d13/value - {"text":"QuangHuy01"}
+RESULT: {"text":"QuangHuy01"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element/59d5bd9c-e887-4c01-92e8-dd8973fe1a63/clear - {}
+RESULT: {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element/59d5bd9c-e887-4c01-92e8-dd8973fe1a63/value - {"text":"Huyvff@111"}
+RESULT: {"text":"Huyvff@111"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/bdbe6564f7636746db14a109bc243260/actions - {}
+RESULT: {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: GET /session/bdbe6564f7636746db14a109bc243260/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js:33:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Add AddVideo successfully" time="13.15">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/window/maximize - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: GET /session/bdbe6564f7636746db14a109bc243260/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js:70:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Add AddVideo Fail Add Title" time="12.161">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/window/maximize - {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: GET /session/bdbe6564f7636746db14a109bc243260/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js:105:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Add AddVideo Success add 1 video" time="15.267">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/window/maximize - {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: GET /session/bdbe6564f7636746db14a109bc243260/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js:143:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Add AddVideo Success no add logo" time="14.03">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/window/maximize - {}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/element - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: POST /session/bdbe6564f7636746db14a109bc243260/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
+COMMAND: GET /session/bdbe6564f7636746db14a109bc243260/screenshot - {}
+COMMAND: DELETE /session/bdbe6564f7636746db14a109bc243260 - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestAddVideo.js:181:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

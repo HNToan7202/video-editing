@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Delete Match Test Suite" timestamp="2023-05-05T21:47:57" time="25.662" tests="3" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Delete Match Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/testDeleteMatch.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_63.windows.Delete_Match_Test_Suite" name="Logged in successfully" time="22.742">
+      <system-out><![CDATA[
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/window/maximize - {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/url - {"url":"http://localhost:3000/"}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/ea5d5cb3-6182-4612-a8b6-ab651fa0cfe4/clear - {}
+RESULT: {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/ea5d5cb3-6182-4612-a8b6-ab651fa0cfe4/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/40294397-31a5-418f-876a-8c6fce0d9172/clear - {}
+RESULT: {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/40294397-31a5-418f-876a-8c6fce0d9172/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+RESULT: {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/3914d0c9-f874-4996-be9e-eba57a1a641f/click - {}
+RESULT: {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/element/602b462a-0250-4ef6-b457-554011cb65e4/click - {}
+RESULT: {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Delete_Match_Test_Suite" name="DeleteMatch1" time="2.226">
+      <failure/>
+      <error message="Cannot read properties of undefined (reading 'options')"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/window/maximize - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+RESULT: {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+RESULT: {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/elements - {"using":"css selector","value":"td"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"td"}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: Cannot read properties of undefined (reading 'options')
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/testDeleteMatch.js:18:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Delete_Match_Test_Suite" name="DeleteMatch2" time="0.676">
+      <failure/>
+      <error message="Cannot read properties of undefined (reading 'options')"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/window/maximize - {}
+COMMAND: POST /session/d713978dfafc04fb2cf25a4e6ab2acb2/elements - {"using":"css selector","value":"td"}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"css selector","value":"td"}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/d713978dfafc04fb2cf25a4e6ab2acb2 - {}
+COMMAND: GET /session/d713978dfafc04fb2cf25a4e6ab2acb2/title - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: Cannot read properties of undefined (reading 'options')
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/testDeleteMatch.js:29:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
