@@ -1,9 +1,11 @@
+
 {
   "dependencies": {
     "mongodb1": {
       "type": "mongodb",
-      "connectionId": "VideoEditing",
+      "connectionId": "mongodb:::localhost:27017",
       "dynamicId": null
     }
   }
+
 }

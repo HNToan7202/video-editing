@@ -1,3 +1,4 @@
+
 {
   "dependencies": {
     "mongodb1": {
@@ -6,8 +7,9 @@
       "containerName": "mongodb",
       "containerImage": "mongo",
       "type": "mongodb.container",
-      "connectionId": "VideoEditing",
+      "connectionId": "mongodb:::localhost:27017",
       "dynamicId": null
     }
   }
+
 }
