@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>video_editing_api</RootNamespace>
     <UserSecretsId>645d751c-6dc2-4e5f-b2d9-c7a5458ac1fc</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     
   </PropertyGroup>
 
@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.9" />
     <PackageReference Include="AspNetCore.Identity.MongoDbCore" Version="3.1.2" />    
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-    <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />    
   </ItemGroup>
@@ -36,7 +36,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\.editorconfig" />
-  </ItemGroup>
 </Project>
