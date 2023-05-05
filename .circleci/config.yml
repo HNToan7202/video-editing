@@ -11,20 +11,31 @@ jobs:
       - run:
           name: Test Docker
           command: docker --version
+      - run:
+          name: Testing project
+          command: google-chrome --version
+          working_directory: /home/circleci/project/client
       # - run:
       #     name: Start Docker
       #     command: sudo service docker start
-      - run:
-          name: Install Dependencies
-          command: npm install
-          working_directory: /home/circleci/project/client
-      - run:
-          name: Build and push Docker image
-          command: |
-            docker build -t $DOCKERHUB_USERNAME/videodemo:latest .
-            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
-            docker push $DOCKERHUB_USERNAME/videodemo:latest
-          working_directory: /home/circleci/project/client
+      # - run:
+      #     name: Install Dependencies
+      #     command: npm install
+      #     working_directory: /home/circleci/project/client
+      # - run:
+      #     name: Build and push Docker image
+      #     command: |
+      #       docker build -t $DOCKERHUB_USERNAME/videodemo:latest .
+      #       docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+      #       docker push $DOCKERHUB_USERNAME/videodemo:latest
+      #     working_directory: /home/circleci/project/client
+      # - run:
+      #     name: Build and push Docker image Server
+      #     command: |
+      #       docker build -t $DOCKERHUB_USERNAME/videodemoserver:latest .
+      #       docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+      #       docker push $DOCKERHUB_USERNAME/videodemoserver:latest
+      #     working_directory: /home/circleci/project/server/video-editing-api/video-editing-api
 workflows:
   build-and-deploy:
     jobs:

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuites>
+  <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-05T17:31:07" time="20.761" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="DownloadVideo Test Suite"/>
+      <property name="capabilities" value="chrome.112_0_5615_138.windows"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/testDownloadVideo.js"/>
+    </properties>
+    <testcase classname="chrome.112_0_5615_138.windows.DownloadVideo_Test_Suite" name="Logged in successfully" time="6.601">
+      <system-out><![CDATA[
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/window/maximize - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"http://localhost:3000/"}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/2fa1cf87-a347-4d35-9eb2-b30eb017198c/clear - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/2fa1cf87-a347-4d35-9eb2-b30eb017198c/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/aa2987b3-731f-448b-b2bd-31c97db998f6/clear - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/aa2987b3-731f-448b-b2bd-31c97db998f6/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+RESULT: {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/6dd1b072-e063-464a-b652-014697bcb5a0/click - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element/53007ba4-be33-40d7-80b9-f92487668190/click - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.112_0_5615_138.windows.DownloadVideo_Test_Suite" name="DownloadVideo" time="14.152">
+      <system-out><![CDATA[
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/window/maximize - {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"http://localhost:3000/gallery"}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {"url":"http://localhost:3000/gallery"}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/element - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/element/2fff7555-fccd-4142-82ec-bb22eb41e168/attribute/src - {}
+RESULT: {}
+COMMAND: POST /session/5b184dbd483e8cb76fb302066b0e515f/url - {"url":"https://store.cads.live/projects/6454d8640ca7eb0a3ba25687/raw/video"}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {"url":"https://store.cads.live/projects/6454d8640ca7eb0a3ba25687/raw/video"}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+COMMAND: DELETE /session/5b184dbd483e8cb76fb302066b0e515f - {}
+RESULT: {}
+COMMAND: GET /session/5b184dbd483e8cb76fb302066b0e515f/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
+=======
+<testsuites/>
+>>>>>>> e8d776b158c447fad4a04c615ce236288e57337f
