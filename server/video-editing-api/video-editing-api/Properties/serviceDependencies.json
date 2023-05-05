@@ -1,3 +1,9 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "mongodb1": {
+      "type": "mongodb",
+      "connectionId": "VideoEditing",
+      "dynamicId": null
+    }
+  }
 }
