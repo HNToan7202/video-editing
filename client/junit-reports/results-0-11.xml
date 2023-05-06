@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-05T21:48:59" time="39.303" tests="2" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="DownloadVideo Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/testDownloadVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_63.windows.DownloadVideo_Test_Suite" name="Logged in successfully" time="15.84">
+      <system-out><![CDATA[
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/window/maximize - {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/url - {"url":"http://localhost:3000/"}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/459fc88e-2297-4ed7-82b3-c009e2601d65/clear - {}
+RESULT: {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/459fc88e-2297-4ed7-82b3-c009e2601d65/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/db66179b-10f2-48ac-9a67-6d7d77b77e2a/clear - {}
+RESULT: {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/db66179b-10f2-48ac-9a67-6d7d77b77e2a/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+RESULT: {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/5ea284f5-ac2b-488c-ae50-f3436c3ec9e0/click - {}
+RESULT: {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element/99f7de31-7ffc-4c92-9daa-a2c5959f0abe/click - {}
+RESULT: {}
+COMMAND: GET /session/df351d6233998f1c72ca30fa9969672d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/df351d6233998f1c72ca30fa9969672d/title - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.DownloadVideo_Test_Suite" name="DownloadVideo" time="23.448">
+      <failure/>
+      <error message="Can't call getAttribute on element with selector &quot;video&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/window/maximize - {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/url - {"url":"http://localhost:3000/gallery"}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/df351d6233998f1c72ca30fa9969672d/title - {}
+RESULT: {"url":"http://localhost:3000/gallery"}
+RESULT: {}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/element - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+RESULT: {"using":"css selector","value":"video"}
+COMMAND: POST /session/df351d6233998f1c72ca30fa9969672d/elements - {"using":"css selector","value":"video"}
+COMMAND: GET /session/df351d6233998f1c72ca30fa9969672d/screenshot - {}
+COMMAND: DELETE /session/df351d6233998f1c72ca30fa9969672d - {}
+RESULT: {"using":"css selector","value":"video"}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call getAttribute on element with selector "video" because element wasn't found
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/testDownloadVideo.js:18:26)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

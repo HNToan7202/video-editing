@@ -1,34 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Demo Tests" timestamp="2023-05-04T21:16:03" time="12.177" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Add Match" timestamp="2023-05-05T21:46:35" time="42.319" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Demo Tests"/>
+      <property name="suiteName" value="Add Match"/>
       <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/specs/test1.spec.js"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestAddMatch03.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.Demo_Tests" name="My First Test" time="12.165">
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Match" name="should Add Match successfully" time="42.313">
+      <failure/>
+      <error message="element not interactable&#xA;  (Session info: chrome=113.0.5672.63)"/>
       <system-out><![CDATA[
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/window/maximize - {}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/element - {"using":"css selector","value":"[name=\"q\"]"}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/url - {"url":"https://google.com/"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/window/maximize - {}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/url - {"url":"http://localhost:3000/"}
 RESULT: {}
-RESULT: {"using":"css selector","value":"[name=\"q\"]"}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/elements - {"using":"css selector","value":"[name=\"q\"]"}
-RESULT: {"url":"https://google.com/"}
-RESULT: {"using":"css selector","value":"[name=\"q\"]"}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/element - {"using":"css selector","value":"[name=\"q\"]"}
-RESULT: {"using":"css selector","value":"[name=\"q\"]"}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/element/4570180e-403c-48e5-bc64-995a08608a9e/clear - {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/375963ce-a5e5-4e8d-b97b-426fa52db3e3/clear - {}
 RESULT: {}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/element/4570180e-403c-48e5-bc64-995a08608a9e/value - {"text":"WebdriverIO"}
-RESULT: {"text":"WebdriverIO"}
-COMMAND: POST /session/89447951d611bce0d97b80febde99657/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/89447951d611bce0d97b80febde99657 - {}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/375963ce-a5e5-4e8d-b97b-426fa52db3e3/value - {"text":"QuangHuy01"}
+RESULT: {"text":"QuangHuy01"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/35be2dd9-4789-4fbe-a346-0c9ac3001708/clear - {}
+RESULT: {}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/35be2dd9-4789-4fbe-a346-0c9ac3001708/value - {"text":"Huyvff@111"}
+RESULT: {"text":"Huyvff@111"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/89447951d611bce0d97b80febde99657/actions - {}
+COMMAND: DELETE /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/actions - {}
+RESULT: {}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"button[type=submit]"}
+RESULT: {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/79d68872-8155-41e8-aedf-48de3dd8fff8/click - {}
+RESULT: {}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/element/0a85efc5-cd62-4509-99da-d177ed6b96a2/clear - {}
+COMMAND: GET /session/4e9dbdfebe8d0613f541b1f3f0c5a46b/screenshot - {}
+COMMAND: DELETE /session/4e9dbdfebe8d0613f541b1f3f0c5a46b - {}
+RESULT: {}
 RESULT: {}
 ]]></system-out>
+      <system-err><![CDATA[
+element not interactable: element not interactable
+  (Session info: chrome=113.0.5672.63)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

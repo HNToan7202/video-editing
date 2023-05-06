@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Share Video" timestamp="2023-05-05T21:47:57" time="29.153" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Share Video"/>
+      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestShareVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_63.windows.Share_Video" name="should Add Match successfully" time="29.147">
+      <failure/>
+      <error message="element not interactable&#xA;  (Session info: chrome=113.0.5672.63)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/window/maximize - {}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/url - {"url":"http://localhost:3000/"}
+RESULT: {}
+RESULT: {"url":"http://localhost:3000/"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/64e5c74b-4a94-48b8-8085-d1def4dbf997/clear - {}
+RESULT: {}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/64e5c74b-4a94-48b8-8085-d1def4dbf997/value - {"text":"QuangHuy01"}
+RESULT: {"text":"QuangHuy01"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/d3bb8baf-c8b2-4738-a8d4-2ff900f97610/clear - {}
+RESULT: {}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/d3bb8baf-c8b2-4738-a8d4-2ff900f97610/value - {"text":"Huyvff@111"}
+RESULT: {"text":"Huyvff@111"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/1c36cf9d1cbe4b9618f3191be55290a6/actions - {}
+RESULT: {}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"button[type=submit]"}
+RESULT: {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/e7e176f1-969d-4d8d-b158-422a431e7385/click - {}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/elements - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element - {"using":"css selector","value":"#\\:r7\\:"}
+RESULT: {"using":"css selector","value":"#\\:r7\\:"}
+COMMAND: POST /session/1c36cf9d1cbe4b9618f3191be55290a6/element/43c3498d-21ec-4d80-baf1-bb1bc82496e7/clear - {}
+COMMAND: GET /session/1c36cf9d1cbe4b9618f3191be55290a6/screenshot - {}
+COMMAND: DELETE /session/1c36cf9d1cbe4b9618f3191be55290a6 - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+element not interactable: element not interactable
+  (Session info: chrome=113.0.5672.63)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
