@@ -1,12 +1,6 @@
 export const config = {
   runner: "local",
-
-
-  specs: ["./src/test/**/testDownloadVideo.js"],
-
-  
-
-
+  specs: ["./src/test/**/testUploadJson.js"],
   exclude: [],
 
   maxInstances: 5,

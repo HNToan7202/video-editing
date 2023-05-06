@@ -21,28 +21,33 @@ describe("UpLoadVideo Test Suite", () => {
                 ".MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1suf56w-MuiButtonBase-root-MuiFab-root"
             )
             .click();
-        await browser.pause(1000);    
+        await browser.pause(1000);
         await browser
             .$$(
                 ".MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             )
-            .setValue("images");   
+            .setValue("images");
+        const path = require('path');
+        // Lấy đường dẫn của file script đang thực thi
+        const scriptPath = __dirname;
+        // Chuyển đổi đường dẫn tuyệt đối sang đường dẫn tương đối
+        const relativePath = path.relative(scriptPath, "C:\\Users\\DELL\\Downloads\\261208-P553NY-913.jpg");
         await browser.pause(1000);
         browser
             .$("input[type=file]")
-            .setValue("C:\\Users\\DELL\\Downloads\\261208-P553NY-913.jpg");
-    
+            .setValue(relativePath);
+
         await browser.pause(1000);
         await browser
             .$$(
                 ".MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
             )
-            .click();   
+            .click();
         await browser.pause(1000);
         await browser.saveScreenshot("./src/testing/UpLoadVideo/UpLoadVideo.png");
         expect(browser).toHaveTitle("UpLoadVideo");
     });
-  
+
 });
 
 after(() => {

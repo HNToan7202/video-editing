@@ -24,7 +24,12 @@ describe("UpLoadJson Test Suite", () => {
         await browser.pause(1000);
         await browser.$('span[title="types: JSON"]').setValue("Uploaded Successfully!.")
         await browser.pause(1000);
-        await browser.$("input[type=file]").setValue("C:\\Users\\DELL\\Downloads\\VietNam_Malay.json");
+        const path = require('path');
+        // Lấy đường dẫn của file script đang thực thi
+        const scriptPath = __dirname;
+        // Chuyển đổi đường dẫn tuyệt đối sang đường dẫn tương đối
+        const relativePath = path.relative(scriptPath, "C:\\Users\\DELL\\Downloads\\VietNam_Malay.json");
+        await browser.$("input[type=file]").setValue(relativePath);
         await browser.pause(1000);
         await browser.$$('.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root')[1].click();
         await browser.pause(1000);
