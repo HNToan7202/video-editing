@@ -1,3 +1,4 @@
+import path from "pạth";
 describe("UpLoadJson Test Suite", () => {
   it("Logged in successfully", async () => {
     await browser.url("http://localhost:3000");
