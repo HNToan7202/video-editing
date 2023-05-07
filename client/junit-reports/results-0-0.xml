@@ -1,164 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="UpLoadJson Test Suite" timestamp="2023-05-05T22:05:15" time="72.94" tests="3" failures="2" errors="2" skipped="0">
+  <testsuite name="UpLoadVideo Test Suite" timestamp="2023-05-08T02:50:35" time="18.282" tests="2" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="UpLoadJson Test Suite"/>
+      <property name="suiteName" value="UpLoadVideo Test Suite"/>
       <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/testUploadJson.js"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestUploadVideo.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.UpLoadJson_Test_Suite" name="Logged in successfully" time="60.017">
-      <failure/>
-      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;UpLoadJson Test Suite Logged in successfully&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\HCMUTE\video-editing\client\src\test\testUploadJson.js)"/>
+    <testcase classname="chrome.113_0_5672_63.windows.UpLoadVideo_Test_Suite" name="Logged in successfully" time="5.901">
       <system-out><![CDATA[
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/window/maximize - {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/url - {"url":"http://localhost:3000/"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/window/maximize - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/url - {"url":"http://localhost:3000/"}
 RESULT: {}
 RESULT: {"url":"http://localhost:3000/"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element - {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-username"}
 RESULT: {"using":"css selector","value":"#login-username"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/59b732a8-0d43-479f-ad45-176818dc7439/clear - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dbfd45c1-64d8-48a7-aed5-bdd64425e848/clear - {}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/59b732a8-0d43-479f-ad45-176818dc7439/value - {"text":"QuangHuy01"}
-RESULT: {"text":"QuangHuy01"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element - {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dbfd45c1-64d8-48a7-aed5-bdd64425e848/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-password"}
 RESULT: {"using":"css selector","value":"#login-password"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/3de8ea4e-28af-4b84-ae79-d8ae1986a05f/clear - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/4b539785-28c6-4870-95be-8f7671f848d5/clear - {}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/3de8ea4e-28af-4b84-ae79-d8ae1986a05f/value - {"text":"Huyvff@111"}
-RESULT: {"text":"Huyvff@111"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/50bb2d54-4a93-4b36-90d9-8c62286d9a15/click - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element - {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/4b539785-28c6-4870-95be-8f7671f848d5/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-button"}
 RESULT: {"using":"css selector","value":"#login-button"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/68f6a155-c5d0-458a-95e1-63ce079ff2ca/click - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/b99dc54a-5377-48f5-849b-043513cdaf9e/click - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Timeout of 60000ms exceeded. The execution in the test "UpLoadJson Test Suite Logged in successfully" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\HCMUTE\video-editing\client\src\test\testUploadJson.js)
-    at createTimeoutError (E:\HCMUTE\video-editing\client\node_modules\mocha\lib\errors.js:498:15)
-    at Test.Runnable._timeoutError (E:\HCMUTE\video-editing\client\node_modules\mocha\lib\runnable.js:431:10)
-    at Timeout.<anonymous> (E:\HCMUTE\video-editing\client\node_modules\mocha\lib\runnable.js:246:24)
-    at listOnTimeout (node:internal/timers:557:17)
-    at processTimers (node:internal/timers:500:7)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_5672_63.windows.UpLoadJson_Test_Suite" name="UpLoadJson1" time="1.847">
-      <system-out><![CDATA[
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/window/maximize - {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"td"}
-RESULT: {}
-RESULT: {"using":"css selector","value":"td"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/5ae9df4e-27cb-4947-872d-c635f4851369/element - {"using":"css selector","value":"button"}
-RESULT: {"using":"css selector","value":"button"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/1e23b5c2-707f-4964-8279-7dd4d6c7e67f/click - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
-RESULT: {"using":"css selector","value":".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element/c407b319-d137-420d-9db6-549855bbf144/click - {}
-RESULT: {}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/screenshot - {}
-RESULT: {}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.113_0_5672_63.windows.UpLoadJson_Test_Suite" name="UpLoadJson2" time="11.054">
+    <testcase classname="chrome.113_0_5672_63.windows.UpLoadVideo_Test_Suite" name="UpLoadVideo" time="12.368">
       <failure/>
-      <error message="Can't call setValue on element with selector &quot;span[title=&quot;types:JSON&quot;]&quot; because element wasn't found"/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.63)"/>
       <system-out><![CDATA[
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/window/maximize - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/window/maximize - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/url - {"url":"http://localhost:3000/gallery"}
 RESULT: {}
+RESULT: {"url":"http://localhost:3000/gallery"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dca5f51b-d4ad-4a63-b77e-574eddea9a76/click - {}
 RESULT: {}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"div[role=button]"}
+RESULT: {"using":"css selector","value":"div[role=button]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/65332d61-4d42-4f50-9e26-7b64028dd731/click - {}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/element - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"li[role=option]"}
+RESULT: {"using":"css selector","value":"li[role=option]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/9676546c-6159-41ca-b816-aafbdf0cf130/click - {}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"input[type=text]"}
+RESULT: {"using":"css selector","value":"input[type=text]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/bdcf1cfa-b1a7-4e02-a9f5-334a7aa64e9c/clear - {}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/bdcf1cfa-b1a7-4e02-a9f5-334a7aa64e9c/value - {"text":"Nơi Này Có Anh"}
+RESULT: {"text":"Nơi Này Có Anh"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"input[type=file]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/execute/sync - {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
+RESULT: {"using":"css selector","value":"input[type=file]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"input[type=file]"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/d843ab70-373c-4484-917d-e8ad4d78f84e/clear - {}
+RESULT: {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
+RESULT: {"using":"css selector","value":"input[type=file]"}
 RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/title - {}
-RESULT: {}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: POST /session/4cfea6657e4a60a795bc8308c3c70827/elements - {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-RESULT: {"using":"css selector","value":"span[title=\"types:JSON\"]"}
-COMMAND: GET /session/4cfea6657e4a60a795bc8308c3c70827/screenshot - {}
-COMMAND: DELETE /session/4cfea6657e4a60a795bc8308c3c70827 - {}
-RESULT: {}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/d843ab70-373c-4484-917d-e8ad4d78f84e/value - {"text":"E:HCMUTE\\video-editing\\client\\src\testing\\UploadVideo\\NoiNayCoAnh.mp4"}
+COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"button[type=button]"}
+COMMAND: GET /session/4d2b5fb30c70a042bb0d86292f6edbb3/screenshot - {}
+COMMAND: DELETE /session/4d2b5fb30c70a042bb0d86292f6edbb3 - {}
 RESULT: {}
 ]]></system-out>
       <system-err><![CDATA[
-Error: Can't call setValue on element with selector "span[title="types:JSON"]" because element wasn't found
-    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/testUploadJson.js:32:5)
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.63)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestUploadVideo.js:41:5)
 ]]></system-err>
     </testcase>
   </testsuite>

@@ -1,52 +1,50 @@
-
 describe("UpLoadVideo Test Suite", () => {
-    it("Logged in successfully", async () => {
-        await browser.url("http://localhost:3000");
-        const username = await browser.$("#login-username");
-        await username.setValue("congthanh");
-        const password = await browser.$("#login-password");
-        await password.setValue("28072002Thanh@");
-        const showPassword = await browser.$(".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root");
-        await showPassword.click();
-        const loginButton = await browser.$("#login-button");
-        await loginButton.click();
-        await browser.saveScreenshot("./src/testing/UpLoadVideo/caseLogin.png");
-        expect(browser).toHaveTitle("SignIn");
+  it("Logged in successfully", async () => {
+    await browser.url("http://localhost:3000");
+    const username = await browser.$("#login-username");
+    await username.setValue("congthanh");
+    const password = await browser.$("#login-password");
+    await password.setValue("28072002Thanh@");
+    const loginButton = await browser.$("#login-button");
+    await loginButton.click();
+    await browser.pause(2000);
+  });
+  it("UpLoadVideo", async () => {
+    await browser.url("http://localhost:3000/gallery");
+
+    // tao bien chua id cua cac element
+    const BUTTON = "button[type=button]";
+    const TYPE = "div[role=button]";
+    const INPUT_TEXT = "input[type=text]";
+    const LI = "li[role=option]";
+
+    await browser.$$(BUTTON)[1].click();
+    await browser.$$(TYPE)[7].click();
+    await browser.$$(LI)[1].click();
+    await browser.$(INPUT_TEXT).setValue("Nơi Này Có Anh");
+    const inputElement = browser.$("input[type=file]");
+
+    // đợi phần tử xuất hiện
+    inputElement.waitForExist();
+
+    // sửa đổi thuộc tính display của phần tử input[type=file]
+    browser.execute(() => {
+      const inputElement = document.querySelector("input[type=file]");
+      inputElement.style.display = "block";
     });
-    it("UpLoadVideo", async () => {
-        await browser.url("http://localhost:3000/gallery");
-        await browser.pause(1000);
-        await browser
-            .$$(
-                ".MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1suf56w-MuiButtonBase-root-MuiFab-root"
-            )
-            .click();
-        await browser.pause(1000);    
-        await browser
-            .$$(
-                ".MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-            )
-            .setValue("images");   
-        await browser.pause(1000);
-        browser
-            .$("input[type=file]")
-            .setValue("C:\\Users\\DELL\\Downloads\\261208-P553NY-913.jpg");
-    
-        await browser.pause(1000);
-        await browser
-            .$$(
-                ".MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
-            )
-            .click();   
-        await browser.pause(1000);
-        await browser.saveScreenshot("./src/testing/UpLoadVideo/UpLoadVideo.png");
-        expect(browser).toHaveTitle("UpLoadVideo");
-    });
-  
+
+    // tương tác với phần tử input[type=file] đã sửa đổi
+    inputElement.setValue(
+      "E:HCMUTE\\video-editing\\client\\src\testing\\UploadVideo\\NoiNayCoAnh.mp4"
+    );
+    await browser.pause(10000);
+    await browser.$$(BUTTON)[3].click();
+    await browser.pause(10000);
+    await browser.saveScreenshot("./src/testing/UpLoadVideo/FailUPload.png");
+    expect(browser).toHaveTitle("UpLoadVideo");
+  });
 });
 
 after(() => {
-    // allure.generateReport();
+  // allure.generateReport();
 });
-
-
