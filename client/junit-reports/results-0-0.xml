@@ -1,111 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Add Video" timestamp="2023-05-08T14:23:12" time="25.729" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Add Video" timestamp="2023-05-08T14:30:46" time="33.665" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Add Video"/>
       <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestNotifyVideo.js"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestSearchMatch.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="25.713">
-      <failure/>
-      <error message="action.toJSON is not a function"/>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="23.039">
       <system-out><![CDATA[
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/window/maximize - {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/url - {"url":"http://localhost:3000/"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/window/maximize - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/url - {"url":"http://localhost:3000/"}
 RESULT: {}
 RESULT: {"url":"http://localhost:3000/"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"#login-username"}
 RESULT: {"using":"css selector","value":"#login-username"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/6a6999c0-f1fc-4c8f-b01c-4b9e49cae4ec/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/56d6c4a4-ec8a-41c2-af81-0d02867bf8d0/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/6a6999c0-f1fc-4c8f-b01c-4b9e49cae4ec/value - {"text":"QuangHuy01"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/56d6c4a4-ec8a-41c2-af81-0d02867bf8d0/value - {"text":"QuangHuy01"}
 RESULT: {"text":"QuangHuy01"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"#login-password"}
 RESULT: {"using":"css selector","value":"#login-password"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c1c03efc-9fdb-47b7-bfe4-69f3e7af384f/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/e29b6560-2675-449d-83cc-1154fbf2599a/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c1c03efc-9fdb-47b7-bfe4-69f3e7af384f/value - {"text":"Huyvff@111"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/e29b6560-2675-449d-83cc-1154fbf2599a/value - {"text":"Huyvff@111"}
 RESULT: {"text":"Huyvff@111"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/url - {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/url - {"url":"http://localhost:3000/highlight"}
 RESULT: {"url":"http://localhost:3000/highlight"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=button]"}
 RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/31f445b3-6465-4b22-95ac-5c7bbc19675e/click - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/f50a430a-f94c-4734-b6da-07312266de49/click - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
 RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/65e0c0ff-c36c-4be8-a0b9-70fb2fcd72ff/click - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fdf306b4-1720-45ee-a034-ec26c49941c9/click - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"input[type=tel]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"input[type=tel]"}
 RESULT: {"using":"css selector","value":"input[type=tel]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/09995770-e42e-49ad-ad6b-f2928d077c65/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/508f397c-0084-410c-8697-c2a6f2095d98/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/09995770-e42e-49ad-ad6b-f2928d077c65/value - {"text":"01/05/2023"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/508f397c-0084-410c-8697-c2a6f2095d98/value - {"text":"01/05/2023"}
 RESULT: {"text":"01/05/2023"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
 RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/60981654-85de-45e7-90f1-341bba9eceea/click - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0fdfc68d-fe19-4142-be5c-a90b9ea05fc5/click - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
 RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/68c5b584-819c-4836-a344-023d114b44cf/click - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/7cbc70d6-6c1d-476e-a6b4-30802d565624/click - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"input[type=tel]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"input[type=tel]"}
 RESULT: {"using":"css selector","value":"input[type=tel]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c42693e7-761b-42ea-be29-8d5f311bfd0c/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/ab298e5c-6f27-48a3-9e9c-6f15616cd963/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c42693e7-761b-42ea-be29-8d5f311bfd0c/value - {"text":"12/05/2023"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/ab298e5c-6f27-48a3-9e9c-6f15616cd963/value - {"text":"12/05/2023"}
 RESULT: {"text":"12/05/2023"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2c082246-c418-4b87-8731-72bed736fec7/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e26c83a-bf65-4952-aadc-5291b4ef5f53/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2c082246-c418-4b87-8731-72bed736fec7/value - {"text":"V League"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e26c83a-bf65-4952-aadc-5291b4ef5f53/value - {"text":"V League"}
 RESULT: {"text":"V League"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
 RESULT: {"using":"css selector","value":"input[placeholder='Select Event Name']"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/d22e9718-50e2-4942-9151-29381b79c068/clear - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/b7b776c8-1e96-4402-98b6-bf0a57c457dd/clear - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/d22e9718-50e2-4942-9151-29381b79c068/value - {"text":"highlight"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/b7b776c8-1e96-4402-98b6-bf0a57c457dd/value - {"text":"highlight"}
 RESULT: {"text":"highlight"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=submit]"}
 RESULT: {"using":"css selector","value":"button[type=submit]"}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2d2088de-9c4d-4f4e-9843-267d961a0449/click - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/23567088-a9ca-44af-849d-f923464dd3b9/click - {}
 RESULT: {}
-COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action6","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
-COMMAND: GET /session/db32ae91a036db7ba55eb928acb93d02/screenshot - {}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02 - {}
-RESULT: {"actions":[{"id":"action6","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/screenshot - {}
 RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="10.614">
+      <system-out><![CDATA[
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/window/maximize - {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/refresh - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fa54d05e-76b7-4c0a-a0dc-47caf8f12d95/clear - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fa54d05e-76b7-4c0a-a0dc-47caf8f12d95/value - {"text":"V League"}
+RESULT: {"text":"V League"}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action6","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {"actions":[{"id":"action6","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action7","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action7","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select Event Name']"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/239588de-f908-4944-b451-bf9d1210c1ff/clear - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/239588de-f908-4944-b451-bf9d1210c1ff/value - {"text":"highlight"}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {"text":"highlight"}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action8","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {"actions":[{"id":"action8","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action9","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action9","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
+RESULT: {}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=submit]"}
+RESULT: {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e52510b-1e44-4ec5-aaeb-abc933f505fa/click - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d - {}
+RESULT: {}
+COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: action.toJSON is not a function
-    at Array.map (<anonymous>)
-    at Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestNotifyVideo.js:47:19)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

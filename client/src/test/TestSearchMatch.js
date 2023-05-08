@@ -7,7 +7,7 @@ describe("Add Video", () => {
     const password = await browser.$("#login-password");
     await password.setValue("Huyvff@111");
     await browser.keys("Enter");
-    await browser.pause(2000);
+    await browser.pause(4000);
 
     // tạo biến chứa id của các element
     const SEARCH = "button[type=submit]";
@@ -48,9 +48,8 @@ describe("Add Video", () => {
 
   // case success 2
   it("should Search Video successfully", async () => {
-    await browser.pause(2000);
     await browser.refresh();
-    await browser.pause(2000);
+    await browser.pause(4000);
     // tạo biến chứa id của các element
     const SEARCH = "button[type=submit]";
     const BUTTON_OPEN = "button[title=Open]";
