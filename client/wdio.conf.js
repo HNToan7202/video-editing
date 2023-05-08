@@ -1,7 +1,7 @@
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/**/TestUploadVideo.js"],
+  specs: ["./src/test/**/TestNotifyVideo.js"],
 
   exclude: [],
 

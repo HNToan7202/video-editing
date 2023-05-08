@@ -1,82 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="UpLoadVideo Test Suite" timestamp="2023-05-08T02:50:35" time="18.282" tests="2" failures="1" errors="1" skipped="0">
+  <testsuite name="Add Video" timestamp="2023-05-08T14:23:12" time="25.729" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="UpLoadVideo Test Suite"/>
+      <property name="suiteName" value="Add Video"/>
       <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestUploadVideo.js"/>
+      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestNotifyVideo.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.UpLoadVideo_Test_Suite" name="Logged in successfully" time="5.901">
+    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="25.713">
+      <failure/>
+      <error message="action.toJSON is not a function"/>
       <system-out><![CDATA[
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/window/maximize - {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/url - {"url":"http://localhost:3000/"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/window/maximize - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/url - {"url":"http://localhost:3000/"}
 RESULT: {}
 RESULT: {"url":"http://localhost:3000/"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"#login-username"}
 RESULT: {"using":"css selector","value":"#login-username"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dbfd45c1-64d8-48a7-aed5-bdd64425e848/clear - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/6a6999c0-f1fc-4c8f-b01c-4b9e49cae4ec/clear - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dbfd45c1-64d8-48a7-aed5-bdd64425e848/value - {"text":"congthanh"}
-RESULT: {"text":"congthanh"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/6a6999c0-f1fc-4c8f-b01c-4b9e49cae4ec/value - {"text":"QuangHuy01"}
+RESULT: {"text":"QuangHuy01"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"#login-password"}
 RESULT: {"using":"css selector","value":"#login-password"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/4b539785-28c6-4870-95be-8f7671f848d5/clear - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c1c03efc-9fdb-47b7-bfe4-69f3e7af384f/clear - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/4b539785-28c6-4870-95be-8f7671f848d5/value - {"text":"28072002Thanh@"}
-RESULT: {"text":"28072002Thanh@"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"#login-button"}
-RESULT: {"using":"css selector","value":"#login-button"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/b99dc54a-5377-48f5-849b-043513cdaf9e/click - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c1c03efc-9fdb-47b7-bfe4-69f3e7af384f/value - {"text":"Huyvff@111"}
+RESULT: {"text":"Huyvff@111"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
 RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.113_0_5672_63.windows.UpLoadVideo_Test_Suite" name="UpLoadVideo" time="12.368">
-      <failure/>
-      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.63)"/>
-      <system-out><![CDATA[
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/window/maximize - {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/url - {"url":"http://localhost:3000/gallery"}
-RESULT: {}
-RESULT: {"url":"http://localhost:3000/gallery"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/url - {"url":"http://localhost:3000/highlight"}
+RESULT: {"url":"http://localhost:3000/highlight"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"button[type=button]"}
 RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/dca5f51b-d4ad-4a63-b77e-574eddea9a76/click - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/31f445b3-6465-4b22-95ac-5c7bbc19675e/click - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"div[role=button]"}
-RESULT: {"using":"css selector","value":"div[role=button]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/65332d61-4d42-4f50-9e26-7b64028dd731/click - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/65e0c0ff-c36c-4be8-a0b9-70fb2fcd72ff/click - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"li[role=option]"}
-RESULT: {"using":"css selector","value":"li[role=option]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/9676546c-6159-41ca-b816-aafbdf0cf130/click - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"input[type=tel]"}
+RESULT: {"using":"css selector","value":"input[type=tel]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/09995770-e42e-49ad-ad6b-f2928d077c65/clear - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"input[type=text]"}
-RESULT: {"using":"css selector","value":"input[type=text]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/bdcf1cfa-b1a7-4e02-a9f5-334a7aa64e9c/clear - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/09995770-e42e-49ad-ad6b-f2928d077c65/value - {"text":"01/05/2023"}
+RESULT: {"text":"01/05/2023"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/60981654-85de-45e7-90f1-341bba9eceea/click - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/bdcf1cfa-b1a7-4e02-a9f5-334a7aa64e9c/value - {"text":"Nơi Này Có Anh"}
-RESULT: {"text":"Nơi Này Có Anh"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element - {"using":"css selector","value":"input[type=file]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/execute/sync - {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
-RESULT: {"using":"css selector","value":"input[type=file]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"input[type=file]"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/d843ab70-373c-4484-917d-e8ad4d78f84e/clear - {}
-RESULT: {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
-RESULT: {"using":"css selector","value":"input[type=file]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"button[type=button]"}
+RESULT: {"using":"css selector","value":"button[type=button]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/68c5b584-819c-4836-a344-023d114b44cf/click - {}
 RESULT: {}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/element/d843ab70-373c-4484-917d-e8ad4d78f84e/value - {"text":"E:HCMUTE\\video-editing\\client\\src\testing\\UploadVideo\\NoiNayCoAnh.mp4"}
-COMMAND: POST /session/4d2b5fb30c70a042bb0d86292f6edbb3/elements - {"using":"css selector","value":"button[type=button]"}
-COMMAND: GET /session/4d2b5fb30c70a042bb0d86292f6edbb3/screenshot - {}
-COMMAND: DELETE /session/4d2b5fb30c70a042bb0d86292f6edbb3 - {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/elements - {"using":"css selector","value":"input[type=tel]"}
+RESULT: {"using":"css selector","value":"input[type=tel]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c42693e7-761b-42ea-be29-8d5f311bfd0c/clear - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/c42693e7-761b-42ea-be29-8d5f311bfd0c/value - {"text":"12/05/2023"}
+RESULT: {"text":"12/05/2023"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2c082246-c418-4b87-8731-72bed736fec7/clear - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2c082246-c418-4b87-8731-72bed736fec7/value - {"text":"V League"}
+RESULT: {"text":"V League"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select Event Name']"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/d22e9718-50e2-4942-9151-29381b79c068/clear - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/d22e9718-50e2-4942-9151-29381b79c068/value - {"text":"highlight"}
+RESULT: {"text":"highlight"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element - {"using":"css selector","value":"button[type=submit]"}
+RESULT: {"using":"css selector","value":"button[type=submit]"}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/element/2d2088de-9c4d-4f4e-9843-267d961a0449/click - {}
+RESULT: {}
+COMMAND: POST /session/db32ae91a036db7ba55eb928acb93d02/actions - {"actions":[{"id":"action6","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/db32ae91a036db7ba55eb928acb93d02/screenshot - {}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02 - {}
+RESULT: {"actions":[{"id":"action6","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/db32ae91a036db7ba55eb928acb93d02/actions - {}
+RESULT: {}
 RESULT: {}
 ]]></system-out>
       <system-err><![CDATA[
-no such window: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=113.0.5672.63)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestUploadVideo.js:41:5)
+TypeError: action.toJSON is not a function
+    at Array.map (<anonymous>)
+    at Context.<anonymous> (file:///E:/HCMUTE/video-editing/client/src/test/TestNotifyVideo.js:47:19)
 ]]></system-err>
     </testcase>
   </testsuite>
