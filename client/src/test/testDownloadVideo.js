@@ -9,6 +9,7 @@ describe("DownloadVideo Test Suite", () => {
         await showPassword.click();
         const loginButton = await browser.$("#login-button");
         await loginButton.click();
+        await browser.pause(3000);
         await browser.saveScreenshot("./src/testing/DownloadVideo/caseLogin.png");
         expect(browser).toHaveTitle("SignIn");
     });

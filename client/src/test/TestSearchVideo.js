@@ -1,7 +1,7 @@
 describe("Add Video", () => {
   // case success
   it("should Search Video successfully", async () => {
-    await browser.url("http://localhost:3000/");
+    await browser.url("http://ec2-54-164-65-118.compute-1.amazonaws.com/");
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
@@ -19,7 +19,7 @@ describe("Add Video", () => {
     const SPAN = "span[role=button]";
     const CHECKBOX = "input[type=checkbox]";
     // thực hiện các bước test
-    await browser.url("http://localhost:3000/highlight");
+    await browser.url("http://ec2-54-164-65-118.compute-1.amazonaws.com/highlight");
 
     await browser.$(BUTTON).click();
     await browser.pause(1000);
@@ -96,7 +96,7 @@ describe("Add Video", () => {
     await browser.pause(3000);
 
     await browser.$(SPAN).click();
-    await browser.pause(10000);
+    await browser.pause(3000);
     await browser.$$(CHECKBOX)[11].click();
     await browser.$$(BUTTON)[11].click();
 

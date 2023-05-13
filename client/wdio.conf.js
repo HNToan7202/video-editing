@@ -1,7 +1,7 @@
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/**/TestNotifyVideo.js"],
+  specs: ["./src/test/**/TestSearchVideo.js"],
 
   exclude: [],
 
@@ -15,8 +15,9 @@ export const config = {
     {
       maxInstances: 5,
       browserName: "chrome",
-      acceptInsecureCerts: true,
+      // browserName: 'firefox',
       // browserName: "MicrosoftEdge",
+      acceptInsecureCerts: true,
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,

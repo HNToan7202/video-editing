@@ -1,13 +1,13 @@
 describe("Add Video", () => {
   // case success
   it("should Add AddVideo successfully", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    await browser.url("http://ec2-54-164-65-118.compute-1.amazonaws.com/");
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
     await password.setValue("Huyvff@111");
     await browser.keys("Enter");
-    await browser.pause(1000);
+    await browser.pause(3000);
 
     // tạo biến chứa id của các element
     const ITEM_VIDEO = "input[type=checkbox]";
@@ -16,7 +16,7 @@ describe("Add Video", () => {
     const MERGE = "button[type=submit]";
     // thực hiện các bước test
     await browser.url(
-      "http://ec2-3-92-79-106.compute-1.amazonaws.com/highlight"
+      "http://ec2-54-164-65-118.compute-1.amazonaws.com/highlight"
     );
 
     await browser.pause(2000);
@@ -119,7 +119,7 @@ describe("Add Video", () => {
 
   // // case AddVideo Success no add logo
   it("should Add AddVideo Success no add logo", async () => {
-    // await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    // await browser.url("http://ec2-54-164-65-118.compute-1.amazonaws.com/");
     // const username = await browser.$("#login-username");
     // await username.setValue("QuangHuy01");
     // const password = await browser.$("#login-password");
@@ -127,7 +127,7 @@ describe("Add Video", () => {
     // await browser.keys("Enter");
     // await browser.pause(1000);
     // await browser.url(
-    //   "http://ec2-3-92-79-106.compute-1.amazonaws.com/highlight"
+    //   "http://ec2-54-164-65-118.compute-1.amazonaws.com/highlight"
     // );
     // tạo biến chứa id của các element
     await browser.refresh();

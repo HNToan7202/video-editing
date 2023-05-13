@@ -1,7 +1,7 @@
 describe("Add Match", () => {
   // case success
   it("should Add Match successfully", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    await browser.url("http://localhost:3000/");
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
