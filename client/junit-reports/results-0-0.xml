@@ -1,184 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Add Video" timestamp="2023-05-08T14:30:46" time="33.665" tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="Add Video" timestamp="2023-05-16T00:28:48" time="43.078" tests="2" failures="2" errors="2" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Add Video"/>
-      <property name="capabilities" value="chrome.113_0_5672_63.windows"/>
-      <property name="file" value="file:///E:/HCMUTE/video-editing/client/src/test/TestSearchMatch.js"/>
+      <property name="capabilities" value="chrome.113_0_5672_93.windows"/>
+      <property name="file" value="file:///E:/video-editing/client/src/test/TestSearchMatch.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="23.039">
+    <testcase classname="chrome.113_0_5672_93.windows.Add_Video" name="should Search Video successfully" time="24.286">
+      <failure/>
+      <error message="unknown error: net::ERR_CONNECTION_REFUSED&#xA;  (Session info: chrome=113.0.5672.93)"/>
       <system-out><![CDATA[
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/window/maximize - {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/url - {"url":"http://localhost:3000/"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/window/maximize - {}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/url - {"url":"http://ec2-100-26-47-151.compute-1.amazonaws.com/"}
 RESULT: {}
-RESULT: {"url":"http://localhost:3000/"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"#login-username"}
-RESULT: {"using":"css selector","value":"#login-username"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/56d6c4a4-ec8a-41c2-af81-0d02867bf8d0/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/56d6c4a4-ec8a-41c2-af81-0d02867bf8d0/value - {"text":"QuangHuy01"}
-RESULT: {"text":"QuangHuy01"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"#login-password"}
-RESULT: {"using":"css selector","value":"#login-password"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/e29b6560-2675-449d-83cc-1154fbf2599a/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/e29b6560-2675-449d-83cc-1154fbf2599a/value - {"text":"Huyvff@111"}
-RESULT: {"text":"Huyvff@111"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/url - {"url":"http://localhost:3000/highlight"}
-RESULT: {"url":"http://localhost:3000/highlight"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=button]"}
-RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/f50a430a-f94c-4734-b6da-07312266de49/click - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
-RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fdf306b4-1720-45ee-a034-ec26c49941c9/click - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"input[type=tel]"}
-RESULT: {"using":"css selector","value":"input[type=tel]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/508f397c-0084-410c-8697-c2a6f2095d98/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/508f397c-0084-410c-8697-c2a6f2095d98/value - {"text":"01/05/2023"}
-RESULT: {"text":"01/05/2023"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
-RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0fdfc68d-fe19-4142-be5c-a90b9ea05fc5/click - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"button[type=button]"}
-RESULT: {"using":"css selector","value":"button[type=button]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/7cbc70d6-6c1d-476e-a6b4-30802d565624/click - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/elements - {"using":"css selector","value":"input[type=tel]"}
-RESULT: {"using":"css selector","value":"input[type=tel]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/ab298e5c-6f27-48a3-9e9c-6f15616cd963/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/ab298e5c-6f27-48a3-9e9c-6f15616cd963/value - {"text":"12/05/2023"}
-RESULT: {"text":"12/05/2023"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
-RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e26c83a-bf65-4952-aadc-5291b4ef5f53/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e26c83a-bf65-4952-aadc-5291b4ef5f53/value - {"text":"V League"}
-RESULT: {"text":"V League"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action2","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action3","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
-RESULT: {"using":"css selector","value":"input[placeholder='Select Event Name']"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/b7b776c8-1e96-4402-98b6-bf0a57c457dd/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/b7b776c8-1e96-4402-98b6-bf0a57c457dd/value - {"text":"highlight"}
-RESULT: {"text":"highlight"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action4","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action5","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=submit]"}
-RESULT: {"using":"css selector","value":"button[type=submit]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/23567088-a9ca-44af-849d-f923464dd3b9/click - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/screenshot - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
+COMMAND: GET /session/27fa7b3dfce76cae3448741782336c63/screenshot - {}
 ]]></system-out>
+      <system-err><![CDATA[
+unknown error: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=113.0.5672.93)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestSearchMatch.js:4:5)
+]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_5672_63.windows.Add_Video" name="should Search Video successfully" time="10.614">
+    <testcase classname="chrome.113_0_5672_93.windows.Add_Video" name="should Search Video successfully" time="18.682">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Select league name']&quot; because element wasn't found"/>
       <system-out><![CDATA[
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/window/maximize - {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/refresh - {}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/window/maximize - {}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/refresh - {}
 RESULT: {}
 RESULT: {}
 RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/element - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fa54d05e-76b7-4c0a-a0dc-47caf8f12d95/clear - {}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: POST /session/27fa7b3dfce76cae3448741782336c63/elements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: GET /session/27fa7b3dfce76cae3448741782336c63/screenshot - {}
+RESULT: {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: DELETE /session/27fa7b3dfce76cae3448741782336c63 - {}
 RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/fa54d05e-76b7-4c0a-a0dc-47caf8f12d95/value - {"text":"V League"}
-RESULT: {"text":"V League"}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action6","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {"actions":[{"id":"action6","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action7","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action7","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"input[placeholder='Select Event Name']"}
-RESULT: {"using":"css selector","value":"input[placeholder='Select Event Name']"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/239588de-f908-4944-b451-bf9d1210c1ff/clear - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/239588de-f908-4944-b451-bf9d1210c1ff/value - {"text":"highlight"}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {"text":"highlight"}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action8","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {"actions":[{"id":"action8","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {"actions":[{"id":"action9","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-RESULT: {"actions":[{"id":"action9","type":"key","parameters":{},"actions":[{"type":"keyDown","value":""},{"type":"pause","duration":10},{"type":"keyUp","value":""}]}]}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d/actions - {}
-RESULT: {}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element - {"using":"css selector","value":"button[type=submit]"}
-RESULT: {"using":"css selector","value":"button[type=submit]"}
-COMMAND: POST /session/c33628f2f2ad45adca5dda2c87d9595d/element/0e52510b-1e44-4ec5-aaeb-abc933f505fa/click - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/screenshot - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
-COMMAND: DELETE /session/c33628f2f2ad45adca5dda2c87d9595d - {}
-RESULT: {}
-COMMAND: GET /session/c33628f2f2ad45adca5dda2c87d9595d/title - {}
 RESULT: {}
 ]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Select league name']" because element wasn't found
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestSearchMatch.js:75:5)
+]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

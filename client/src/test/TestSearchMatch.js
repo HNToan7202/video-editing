@@ -1,7 +1,7 @@
 describe("Add Video", () => {
   // case success
   it("should Search Video successfully", async () => {
-    await browser.url("http://localhost:3000/");
+    await browser.url("http://ec2-100-26-47-151.compute-1.amazonaws.com/");
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
@@ -17,7 +17,9 @@ describe("Add Video", () => {
     const LEAGUE_NAME = "input[placeholder='Select league name']";
     const EVENT_NAME = "input[placeholder='Select Event Name']";
     // thực hiện các bước test
-    await browser.url("http://localhost:3000/highlight");
+    await browser.url(
+      "http://ec2-100-26-47-151.compute-1.amazonaws.com/highlight"
+    );
 
     await browser.$(BUTTON).click();
     await browser.pause(1000);
