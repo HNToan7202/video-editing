@@ -2,6 +2,11 @@ version: 2.1
 orbs:
   docker: circleci/docker@1.1.0
 jobs:
+  build with java:
+    docker:
+      - image: circleci/openjdk:11-jdk
+    environment:
+      JAVA_HOME: /usr/local/openjdk-11
   build:
     docker:
       - image: cimg/node:17.0
