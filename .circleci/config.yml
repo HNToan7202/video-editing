@@ -16,11 +16,6 @@ jobs:
           command: npm install
           working_directory: /home/circleci/project/client
       - run:
-          name: Build
-          command: npm run build
-          working_directory: /home/circleci/project/client
-          
-      - run:
           name: Test
           command: npm run wdio
           working_directory: /home/circleci/project/client
