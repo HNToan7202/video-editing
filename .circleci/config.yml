@@ -15,6 +15,11 @@ jobs:
           name: Install Dependencies
           command: npm install
           working_directory: /home/circleci/project/client
+          
+      - run:
+          name: Run
+          command: npm run start
+          working_directory: /home/circleci/project/client
       - run:
           name: Test
           command: npm run wdio
