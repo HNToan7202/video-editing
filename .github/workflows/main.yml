@@ -31,8 +31,3 @@ jobs:
 
       - name: Run all tests
         run: npm run wdio
-
-    strategy:
-      matrix:
-        node-version: ["16.x" ]
-        os: [ ubuntu-latest ]
