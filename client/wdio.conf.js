@@ -2,7 +2,7 @@ import allure from "allure-commandline";
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/**/TestSearchMatch.js"],
+  specs: ["./src/test/**/TestLogin.js"],
 
   exclude: [],
 
