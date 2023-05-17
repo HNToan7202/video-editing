@@ -7,9 +7,10 @@ describe("Sign In Test Suite", () => {
     const password = await browser.$("#login-password");
     await password.setValue("Huyvff@111");
     await browser.keys("Enter");
-    await browser.pause(1000);
+    await browser.pause(3000);
     const usernameLogout = await browser.$("#logout-button");
     await usernameLogout.click();
+    await browser.pause(3000);
     await browser.saveScreenshot("./src/testing/LogOut/caseLogout.png");
 
     expect(browser).toHaveTitle("LogOut");

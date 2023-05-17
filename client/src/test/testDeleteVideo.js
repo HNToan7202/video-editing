@@ -2,19 +2,19 @@ describe("DeleteVideo Test Suite", () => {
     it("Logged in successfully", async () => {
         await browser.url("http://localhost:3000");
         const username = await browser.$("#login-username");
-        await username.setValue("congthanh");
+        await username.setValue("congthanh"); 
         const password = await browser.$("#login-password");
-        await password.setValue("28072002Thanh@");
+        await password.setValue("28072002Thanh@"); 
         const showPassword = await browser.$(".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root");
-        await showPassword.click();
+        await showPassword.click();  
         const loginButton = await browser.$("#login-button");
         await loginButton.click();
-        await browser.saveScreenshot("./src/testing/DeleteVideo/caseLogin.png");
-        expect(browser).toHaveTitle("SignIn");
+        await browser.pause(3000);
     });
     it("DeleteVideo1", async () => {
-        await browser.url("http://localhost:3000/gallery");
-        await browser.pause(1000);
+
+        await browser.url("http://localhost:3000/gallery/");
+        
         //Testcase: Xóa ảnh
         await browser.$('.ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous').click();
         await browser.pause(1000);

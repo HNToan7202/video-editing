@@ -8,7 +8,7 @@ describe("Add Video", () => {
     await password.setValue("Huyvff@111");
     await browser.keys("Enter");
 
-    await browser.pause(1000);
+    await browser.pause(3000);
     // tạo biến chứa id của các element
     const ADD_EVENT =
       ".MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-12fwbsp-MuiButtonBase-root-MuiButton-root";

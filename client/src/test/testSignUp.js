@@ -8,11 +8,11 @@ describe("Sign Up Test Suite", () => {
     const password = await browser.$("#passwordSignUp");
     const passwordConfirm = await browser.$("#confirmPasswordSignUp");
 
-    await username.setValue("QuangHuy01123");
-    await email.setValue("ngoquanghuyw221234@gmail.com");
-    await fullname.setValue("Ngô Quang Huy");
-    await password.setValue("Huyvff@111");
-    await passwordConfirm.setValue("Huyvff@111");
+    await username.setValue("QuangHuy0112333");
+    await email.setValue("ngoquanghuyw22123334@gmail.com");
+    await fullname.setValue("Ngô Quang Huy3");
+    await password.setValue("Huyvff@1113");
+    await passwordConfirm.setValue("Huyvff@1113");
     await browser.keys("Enter");
     await browser.pause(5000);
     await browser.saveScreenshot("./src/testing/SignUp/caseSuccess.png");

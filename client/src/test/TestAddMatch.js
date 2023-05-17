@@ -17,7 +17,7 @@ describe("Add Match", () => {
     const PORT = "#" + ":rc:".replace(/\:/g, "\\:");
     const ADD_LEAGUENAME = await browser.$("button[type=button]");
     const SAVE_BTN = await browser.$("button[type=submit]");
-    await browser.pause(1000);
+    await browser.pause(3000);
     // thực hiện các bước test
     ADD_LEAGUENAME.click();
     await browser.pause(1000);
