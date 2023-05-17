@@ -15,14 +15,11 @@ export const config = {
   capabilities: [
     {
       maxInstances: 5,
-//       browserName: "chrome",
+      browserName: "chrome",
       acceptInsecureCerts: true,
       browserName: 'firefox',
       'moz:firefoxOptions': {
-      binary: '/usr/bin/firefox',
-      // // "ms:edgeOptions": {
-      //   args: ["--headless", "--disable-gpu"],
-      //   w3c: false,
+      binary: '/usr/bin/firefox', // Đường dẫn đến tệp nhị phân của Firefox
       },
     },
   ],
