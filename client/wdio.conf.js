@@ -15,9 +15,9 @@ export const config = {
   capabilities: [
     {
       maxInstances: 5,
-      //browserName: "chrome",
+      browserName: "chrome",
       acceptInsecureCerts: true,
-      browserName: 'firefox',
+//       browserName: 'firefox',
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,
@@ -37,8 +37,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  //services: ["chromedriver"],
-  services: ['geckodriver'],
+  services: ["chromedriver"],
+//   services: ['geckodriver'],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole
