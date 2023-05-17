@@ -32,9 +32,9 @@ jobs:
             docker push $DOCKERHUB_USERNAME/videodemo:latest
           working_directory: /home/circleci/project/client
       - run:
-         name: Test
-         command: npm run wdio
-         working_directory: /home/circleci/project/client
+          name: Test
+          command: npm run wdio
+          working_directory: /home/circleci/project/client
       # - run:
       #     name: Build and push Docker image Server
       #     command: |
