@@ -23,7 +23,7 @@ export const config = {
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,
-      // },
+      },
     },
   ],
 
