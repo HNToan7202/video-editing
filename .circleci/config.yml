@@ -5,9 +5,18 @@ jobs:
   build:
     docker:
       - image: cimg/node:17.0
+    docker:
+      - image: circleci/openjdk:17
     steps:
       - checkout
       - setup_remote_docker
+      - run:
+          name: Set up Java SDK 17
+          command: |
+            echo 'export JAVA_HOME=/usr/local/openjdk-17' >> $BASH_ENV
+            echo 'export PATH=$JAVA_HOME/bin:$PATH' >> $BASH_ENV
+            source $BASH_ENV
+            java -version
       - run:
           name: Test Docker
           command: docker --version
