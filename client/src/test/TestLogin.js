@@ -1,7 +1,7 @@
 describe("Sign in Test Suite", () => {
   it("Login with wrong username", async () => {
     //Đăng nhập sai username
-    await browser.url("http://localhost:3000/");
+    await browser.url("http://ec2-50-19-42-157.compute-1.amazonaws.com");
     const usernameError = await browser.$("#login-username");
     await usernameError.setValue("congthanh28");
     const passwordError = await browser.$("#login-password");
@@ -16,7 +16,7 @@ describe("Sign in Test Suite", () => {
     expect(browser).toHaveTitle("SignIn1");
   });
   it("Login with wrong password", async () => {
-    await browser.url("http://localhost:3000");
+    await browser.url("http://ec2-50-19-42-157.compute-1.amazonaws.com");
     const username = await browser.$("#login-username");
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
@@ -31,7 +31,7 @@ describe("Sign in Test Suite", () => {
     expect(browser).toHaveTitle("SignIn2");
   });
   it("Login to the wrong account", async () => {
-    await browser.url("http://localhost:3000");
+    await browser.url("http://ec2-50-19-42-157.compute-1.amazonaws.com");
     const username = await browser.$("#login-username");
     await username.setValue("congthanh27");
     const password = await browser.$("#login-password");
@@ -46,7 +46,7 @@ describe("Sign in Test Suite", () => {
     expect(browser).toHaveTitle("SignIn3");
   });
   it("Logged in successfully", async () => {
-    await browser.url("http://localhost:3000");
+    await browser.url("http://ec2-50-19-42-157.compute-1.amazonaws.com");
     const username = await browser.$("#login-username");
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
