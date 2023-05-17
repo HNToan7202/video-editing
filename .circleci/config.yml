@@ -12,9 +12,6 @@ jobs:
           name: Test Docker
           command: docker --version
       - run:
-          name: Check Firefox Path
-          command: which firefox
-      - run:
           name: Install Dependencies
           command: npm install
           working_directory: /home/circleci/project/client
