@@ -36,6 +36,7 @@ describe("Sign in Test Suite", () => {
   });
   it("Logged in successfully", async () => {
     await browser.url(TESTING);
+
     const username = await browser.$("#login-username");
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
