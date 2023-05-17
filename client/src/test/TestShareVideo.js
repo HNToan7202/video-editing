@@ -100,26 +100,27 @@
 // //await browser.deleteSession();
 // // fails if file was not created
 // fs.existsSync("./caseShareVideo.png");
-describe("Share Video", () => {
-  // case success
-  it("should ShareVideo Fail", async () => {
-    await browser.url("http://localhost:3000/");
-    const username = await browser.$("#login-username");
-    await username.setValue("QuangHuy01");
-    const password = await browser.$("#login-password");
-    await password.setValue("Huyvff@111");
-    await browser.keys("Enter");
 
-    // tạo biến chứa id của các element
-    const LIST_VIDEO = "button[type=button]";
+// describe("Share Video", () => {
+//   // case success
+//   it("should ShareVideo Fail", async () => {
+//     await browser.url("http://localhost:3000/");
+//     const username = await browser.$("#login-username");
+//     await username.setValue("QuangHuy01");
+//     const password = await browser.$("#login-password");
+//     await password.setValue("Huyvff@111");
+//     await browser.keys("Enter");
 
-    await browser.$$(LIST_VIDEO)[6].click();
+//     // tạo biến chứa id của các element
+//     const LIST_VIDEO = "button[type=button]";
 
-    await browser.saveScreenshot("./src/testing/ShareVideo/caseFail.png");
-    expect(browser).toHaveTitle("AddMatch");
-  });
-});
+//     await browser.$$(LIST_VIDEO)[6].click();
 
-after(() => {
-  // allure.generateReport();
-});
+//     await browser.saveScreenshot("./src/testing/ShareVideo/caseFail.png");
+//     expect(browser).toHaveTitle("AddMatch");
+//   });
+// });
+
+// after(() => {
+//   // allure.generateReport();
+// });

@@ -1,6 +1,7 @@
+import TESTING from "./varlocal.js";
 describe("UpLoadVideo Test Suite", () => {
   it("Logged in successfully", async () => {
-    await browser.url("http://localhost:3000");
+    await browser.url(TESTING);
     const username = await browser.$("#login-username");
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
@@ -10,7 +11,7 @@ describe("UpLoadVideo Test Suite", () => {
     await browser.pause(3000);
   });
   it("UpLoadVideo", async () => {
-    await browser.url("http://localhost:3000/gallery");
+    await browser.url(TESTING + "/gallery");
 
     // tao bien chua id cua cac element
     const BUTTON = "button[type=button]";
@@ -44,7 +45,7 @@ describe("UpLoadVideo Test Suite", () => {
     expect(browser).toHaveTitle("UpLoadVideo");
   });
   it("UpLoadVideo", async () => {
-    await browser.url("http://localhost:3000/gallery");
+    await browser.url(TESTING + "/gallery");
     await browser.pause(2000);
     // tao bien chua id cua cac element
     const BUTTON = "button[type=button]";
@@ -78,7 +79,7 @@ describe("UpLoadVideo Test Suite", () => {
     expect(browser).toHaveTitle("UpLoadVideo");
   });
   it("UpLoadVideo", async () => {
-    await browser.url("http://localhost:3000/gallery");
+    await browser.url(TESTING + "/gallery");
     await browser.pause(2000);
     // tao bien chua id cua cac element
     const BUTTON = "button[type=button]";

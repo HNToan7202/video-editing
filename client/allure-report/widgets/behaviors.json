@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"43dd5d6169babff7b507c03c5707718f","name":"Add Video","statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1}}]}
+{"total":2,"items":[{"uid":"43dd5d6169babff7b507c03c5707718f","name":"Add Video","statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1}},{"uid":"573d0893a9a84a46bc7fc180945c5358","name":"Sign in Test Suite","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}}]}

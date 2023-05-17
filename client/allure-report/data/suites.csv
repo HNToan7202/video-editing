@@ -1,2 +1,6 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
 "broken","Tue May 16 00:29:13 ICT 2023","Tue May 16 00:29:31 ICT 2023","18682","","Add Video","","","","should Search Video successfully",""
+"passed","Wed May 17 23:48:14 ICT 2023","Wed May 17 23:48:23 ICT 2023","9939","","Sign in Test Suite","","","","Login with wrong username",""
+"passed","Wed May 17 23:48:28 ICT 2023","Wed May 17 23:48:31 ICT 2023","3518","","Sign in Test Suite","","","","Login to the wrong account",""
+"passed","Wed May 17 23:48:31 ICT 2023","Wed May 17 23:48:35 ICT 2023","3357","","Sign in Test Suite","","","","Logged in successfully",""
+"passed","Wed May 17 23:48:23 ICT 2023","Wed May 17 23:48:28 ICT 2023","4374","","Sign in Test Suite","","","","Login with wrong password",""

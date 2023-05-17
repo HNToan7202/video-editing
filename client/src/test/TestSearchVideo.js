@@ -1,7 +1,8 @@
+import TESTING from "./varlocal.js";
 describe("Add Video", () => {
   // case success
   it("should Search Video successfully", async () => {
-    await browser.url("http://localhost:3000/");
+    await browser.url(TESTING);
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
@@ -19,7 +20,7 @@ describe("Add Video", () => {
     const SPAN = "span[role=button]";
     const CHECKBOX = "input[type=checkbox]";
     // thực hiện các bước test
-    await browser.url("http://localhost:3000/highlight");
+    await browser.url(TESTING + "/highlight");
 
     await browser.$(BUTTON).click();
     await browser.pause(1000);

@@ -1,7 +1,8 @@
+import TESTING from "./varlocal.js";
 describe("Sign In Test Suite", () => {
   // case success
   it("should sign in successfully", async () => {
-    await browser.url("http://localhost:3000/");
+    await browser.url(TESTING);
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
