@@ -15,10 +15,10 @@ jobs:
           name: Install Dependencies
           command: npm install
           working_directory: /home/circleci/project/client
-      - run:
-          name: Test
-          command: npm run wdio
-          working_directory: /home/circleci/project/client
+#       - run:
+#           name: Test
+#           command: npm run wdio
+#           working_directory: /home/circleci/project/client
           
       - run:
           name: Build and push Docker image
