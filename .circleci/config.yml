@@ -5,7 +5,6 @@ jobs:
   build:
     docker:
       - image: cimg/node:17.0
-    docker:
       - image: circleci/openjdk:17
     steps:
       - checkout
