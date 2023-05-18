@@ -9,11 +9,7 @@ export const config = {
   maxInstances: 5,
 
   capabilities: [
-    {
-      maxInstances: 5,
-      browserName: "chrome",
-      acceptInsecureCerts: true,
-    },
+  
     {
       maxInstances: 5,
       browserName: "firefox",
@@ -36,7 +32,7 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver", "geckodriver"],
+  services: [ "geckodriver"],
 
   framework: "mocha",
 
