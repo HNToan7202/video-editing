@@ -1,3 +1,4 @@
+import allure from "allure-commandline";
 export const config = {
   runner: "local",
   specs: ["./src/test/**/testLogin.js"],
@@ -36,8 +37,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
-  //services: ["edgedriver"],
+  //services: ["chromedriver"],
+  services: ['geckodriver'],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -51,11 +52,14 @@ export const config = {
   // see also: https://webdriver.io/docs/dot-reporter.html
   reporters: [
     "spec",
-    // [
-    //     'allure', {
-    //         outputDir: 'allure-results'
-    //     }
-    // ]
+    [
+      "allure",
+      {
+        outputDir: "./allure-results",
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+      },
+    ],
     [
       "junit",
       {
@@ -213,4 +217,22 @@ export const config = {
    */
   //onReload: function(oldSessionId, newSessionId) {
   //}
+  onComplete: function () {
+    const reportError = new Error("Could not generate Allure report");
+    const generation = allure(["generate", "allure-results", "--clean"]);
+    return new Promise((resolve, reject) => {
+      const generationTimeout = setTimeout(() => reject(reportError), 5000);
+
+      generation.on("exit", function (exitCode) {
+        clearTimeout(generationTimeout);
+
+        if (exitCode !== 0) {
+          return reject(reportError);
+        }
+
+        console.log("Allure report successfully generated");
+        resolve();
+      });
+    });
+  },
 };

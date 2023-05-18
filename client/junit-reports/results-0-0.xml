@@ -1,2 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="Sign in Test Suite" timestamp="2023-05-18T00:12:48" time="62.974" tests="4" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign in Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/TestLogin.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login with wrong username" time="60.011">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;Sign in Test Suite Login with wrong username&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (F:\CNTT\N3\Ky2\Software_tool_and_enviroment\ĐA\video-editing\client\src\test\TestLogin.js)"/>
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh28"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Sign in Test Suite Login with wrong username" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (F:\CNTT\N3\Ky2\Software_tool_and_enviroment\ĐA\video-editing\client\src\test\TestLogin.js)
+    at createTimeoutError (F:\CNTT\N3\Ky2\Software_tool_and_enviroment\ĐA\video-editing\client\node_modules\mocha\lib\errors.js:498:15)
+    at Test.Runnable._timeoutError (F:\CNTT\N3\Ky2\Software_tool_and_enviroment\ĐA\video-editing\client\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (F:\CNTT\N3\Ky2\Software_tool_and_enviroment\ĐA\video-editing\client\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login with wrong password" time="1.352">
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-4"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-4","text":"congthanh"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-5"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-5","text":"28072002Thanh@1"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-6"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login to the wrong account" time="0.87">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-7"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-7","text":"congthanh27"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-8","text":"28072002Thanh@123"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-9"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Logged in successfully" time="0.73">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-10"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-10","text":"congthanh"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-11"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-11","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-12"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: getTitle - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

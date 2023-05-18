@@ -1,0 +1,1 @@
+{"614551340cbe15ab66060e76fd6aa1e6":{"statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"51308b8f87b1c9ae","status":"broken","statusDetails":"Can't call setValue on element with selector \"input[placeholder='Select league name']\" because element wasn't found","time":{"start":1684171753195,"stop":1684171771877,"duration":18682}}]}}
