@@ -1,104 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Add Video" timestamp="2023-05-18T00:19:39" time="55.546" tests="5" failures="5" errors="5" skipped="0">
+  <testsuite name="Sign in Test Suite" timestamp="2023-05-20T02:23:23" time="9.711" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Add Video"/>
-      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
-      <property name="file" value="file:///E:/video-editing/client/src/test/TestAddVideo.js"/>
+      <property name="suiteName" value="Sign in Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/00TestLogin.js"/>
     </properties>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Add AddVideo successfully" time="38.587">
-      <failure/>
-      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login with wrong username" time="5.706">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-username"}
 RESULT: undefined
 COMMAND: elementClear - {"elementId":"ELEMENT-1"}
 RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh28"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-password"}
 RESULT: undefined
 COMMAND: elementClear - {"elementId":"ELEMENT-2"}
 RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Your key input contains more than one character: "Enter", only one is allowed though!
-    at Array.forEach (<anonymous>)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestAddVideo.js:10:5)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Add AddVideo successfully SameName" time="4.512">
-      <failure/>
-      <error message="Element could not be found"/>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login with wrong password" time="1.374">
       <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-4"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-4","text":"congthanh"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-5"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-5","text":"28072002Thanh@1"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-6"}
+RESULT: undefined
 COMMAND: takeScreenshot - {}
-COMMAND: refresh - {}
+COMMAND: getTitle - {}
 RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Element could not be found
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Add AddVideo Fail Add Title" time="5.877">
-      <failure/>
-      <error message="Element could not be found"/>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Login to the wrong account" time="1.316">
       <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-7"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-7","text":"congthanh27"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-8","text":"28072002Thanh@123"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-9"}
+RESULT: undefined
 COMMAND: takeScreenshot - {}
-COMMAND: refresh - {}
+COMMAND: getTitle - {}
 RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Element could not be found
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Add AddVideo Success not add logo" time="3.127">
-      <failure/>
-      <error message="Element could not be found"/>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_in_Test_Suite" name="Logged in successfully" time="1.266">
       <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-10"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-10","text":"congthanh"}
+COMMAND: getTitle - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-11"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-11","text":"28072002Thanh@"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-12"}
+RESULT: undefined
 COMMAND: takeScreenshot - {}
-COMMAND: refresh - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+COMMAND: getTitle - {}
+COMMAND: getTitle - {}
 RESULT: undefined
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
 RESULT: undefined
-]]></system-out>
-      <system-err><![CDATA[
-Error: Element could not be found
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Add AddVideo Success no add logo" time="3.372">
-      <failure/>
-      <error message="Element could not be found"/>
-      <system-out><![CDATA[
-COMMAND: takeScreenshot - {}
-COMMAND: refresh - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-COMMAND: takeScreenshot - {}
 COMMAND: deleteSession - {}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Element could not be found
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

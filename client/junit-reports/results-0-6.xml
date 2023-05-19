@@ -1,2 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-20T02:25:48" time="9.356" tests="2" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="DownloadVideo Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/03TestDownloadVideo.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.DownloadVideo_Test_Suite" name="Logged in successfully" time="6.4">
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.DownloadVideo_Test_Suite" name="DownloadVideo" time="2.937">
+      <failure/>
+      <error message="net::ERR_ABORTED at https://store.cads.live/projects/6467cd100ca7eb6268de331e/raw/video"/>
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/gallery"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"video"}
+RESULT: undefined
+COMMAND: getElementAttribute - {"elementId":"ELEMENT-4","name":"src"}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"https://store.cads.live/projects/6467cd100ca7eb6268de331e/raw/video"}
+COMMAND: takeScreenshot - {}
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+net::ERR_ABORTED at https://store.cads.live/projects/6467cd100ca7eb6268de331e/raw/video
+Error: net::ERR_ABORTED at https://store.cads.live/projects/6467cd100ca7eb6268de331e/raw/video
+    at navigate (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/node_modules/puppeteer-core/lib/esm/puppeteer/common/Frame.js:215:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Frame.goto (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/node_modules/puppeteer-core/lib/esm/puppeteer/common/Frame.js:181:21)
+    at async CDPPage.goto (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/node_modules/puppeteer-core/lib/esm/puppeteer/common/Page.js:435:16)
+    at async DevToolsDriver.navigateTo (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/node_modules/devtools/build/commands/navigateTo.js:16:5)
+    at async Browser.wrappedCommand (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/node_modules/devtools/build/devtoolsdriver.js:127:26)
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/03TestDownloadVideo.js:19:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

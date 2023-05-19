@@ -10,18 +10,24 @@ export const config = {
 
   exclude: [],
 
-  maxInstances: 5,
+
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://docs.saucelabs.com/reference/platforms-configurator
   //
   capabilities: [
-  {
-    maxInstances: 5,
-    browserName: "firefox",
-    acceptInsecureCerts: true,
-  }
+    {
+      maxInstances: 1,
+      browserName: "chrome",
+      acceptInsecureCerts: true,
+    // browserName: "MicrosoftEdge",
+      // // "ms:edgeOptions": {
+      //   args: ["--headless", "--disable-gpu"],
+      //   w3c: false,
+      // },
+    },
   ],
 
 
