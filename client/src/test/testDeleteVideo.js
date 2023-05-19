@@ -6,12 +6,9 @@ describe("DeleteVideo Test Suite", () => {
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
     await password.setValue("28072002Thanh@");
-    const showPassword = await browser.$(
-      ".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"
-    );
-    await showPassword.click();
     const loginButton = await browser.$("#login-button");
     await loginButton.click();
+    await browser.pause(2000);
     await browser.saveScreenshot("./src/testing/DeleteVideo/caseLogin.png");
     expect(browser).toHaveTitle("SignIn");
   });

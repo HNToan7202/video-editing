@@ -6,9 +6,7 @@ describe("Delete Match Test Suite", () => {
     await username.setValue("congthanh");
     const password = await browser.$("#login-password");
     await password.setValue("28072002Thanh@");
-    const showPassword = await browser.$(
-      ".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"
-    );
+    const showPassword = await browser.$("svg");
     await showPassword.click();
     const loginButton = await browser.$("#login-button");
     await loginButton.click();
@@ -20,12 +18,9 @@ describe("Delete Match Test Suite", () => {
     await browser.pause(2000);
     await browser.$$("td")[7].$("button").click();
     await browser.pause(1000);
+    const BUTTON = "button[type=button]";
     //Testcase1: Nhấn nút Hủy
-    await browser
-      .$$(
-        '[class="MuiDialogActions-root MuiDialogActions-spacing css-hlj6pa-MuiDialogActions-root"] button'
-      )[0]
-      .click();
+    await browser.$$(BUTTON)[8].click();
     await browser.pause(1000);
     await browser.saveScreenshot("./src/testing/DeleteMatch/DeleteMatch1.png");
     expect(browser).toHaveTitle("DeleteMatch1");
@@ -34,12 +29,9 @@ describe("Delete Match Test Suite", () => {
     //xóa trận đấu
     await browser.$$("td")[7].$("button").click();
     await browser.pause(1000);
-    //Testcase1: Nhấn nút xóa
-    await browser
-      .$$(
-        '[class="MuiDialogActions-root MuiDialogActions-spacing css-hlj6pa-MuiDialogActions-root"] button'
-      )[1]
-      .click();
+    const BUTTON = "button[type=button]";
+    //Testcase1: Nhấn nút Ok
+    await browser.$$(BUTTON)[9].click();
     await browser.pause(1000);
     await browser.saveScreenshot("./src/testing/DeleteMatch/DeleteMatch2.png");
     expect(browser).toHaveTitle("DeleteMatch2");

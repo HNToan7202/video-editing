@@ -1,17 +1,13 @@
 import allure from "allure-commandline";
 export const config = {
   runner: "local",
-<<<<<<< HEAD
-  specs: ["./src/test/**/testLogin.js"],
-=======
 
-  specs: ["./src/test/**/*.js"],
->>>>>>> 3b0cf4386de7b5baa8cceb55aaedb46cbe51792c
+  specs: ["./src/test/**/testUploadJson.js"],
 
   exclude: [],
 
 
-  maxInstances: 5,
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -19,14 +15,10 @@ export const config = {
   //
   capabilities: [
     {
-      maxInstances: 5,
-      browserName: "chrome",
+      maxInstances: 1,
+      //browserName: "chrome",
       acceptInsecureCerts: true,
-<<<<<<< HEAD
-      browserName: "MicrosoftEdge",
-=======
-      // browserName: "MicrosoftEdge",
->>>>>>> 3b0cf4386de7b5baa8cceb55aaedb46cbe51792c
+     browserName: "MicrosoftEdge",
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,
