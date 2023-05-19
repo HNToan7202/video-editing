@@ -23,12 +23,18 @@ jobs:
           command: |
             echo 'export PATH=$PATH:/usr/local/bin' >> $BASH_ENV
 
-      # Chạy ChromeDriver
+      - run:
+          name: Install libnss3
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y libnss3
+
       - run:
           name: Run ChromeDriver
           command: |
             chromedriver --version
             # Thêm các lệnh khác liên quan đến ChromeDriver ở đây
+
 
       # Thêm các bước khác để chạy tests hoặc công việc của bạn
       - run:
