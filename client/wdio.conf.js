@@ -1,41 +1,26 @@
-// import allure from "allure-commandline";
 export const config = {
   runner: "local",
-
   specs: ["./src/test/**/TestLogin.js"],
-
   exclude: [],
-
   maxInstances: 5,
-
   capabilities: [
-  
     {
       maxInstances: 5,
-      browserName: "firefox",
+      browserName: "chrome",
       acceptInsecureCerts: true,
-      'moz:firefoxOptions': {
-        binary: '/usr/bin/firefox', // Đường dẫn đến tệp nhị phân của Firefox
+      'goog:chromeOptions': {
+        binary: '/path/to/chrome', // Path to the Chrome binary
       },
     },
   ],
-
   logLevel: "info",
-
   bail: 0,
-
   baseUrl: "http://localhost",
-
   waitforTimeout: 10000,
-
   connectionRetryTimeout: 120000,
-
   connectionRetryCount: 3,
-
-  services: [ "geckodriver"],
-
+  services: ["chromedriver"],
   framework: "mocha",
-
   reporters: [
     "spec",
     [
@@ -48,7 +33,6 @@ export const config = {
       },
     ],
   ],
-
   mochaOpts: {
     ui: "bdd",
     timeout: 60000,
