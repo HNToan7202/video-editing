@@ -33,12 +33,6 @@ jobs:
             sudo apt-get install -y libnss3
 
       - run:
-          name: Run ChromeDriver
-          command: |
-            /path/to/chromedriver --headless
-            # Thêm các lệnh khác liên quan đến ChromeDriver ở đây
-
-      - run:
           name: Test Docker
           command: docker --version
 
