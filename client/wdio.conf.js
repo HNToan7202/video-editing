@@ -144,6 +144,11 @@ export const config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
+  before: function (capabilities, specs) {
+    // Bật ChromeDriver trước khi chạy bài kiểm tra
+    execSync("chromedriver --headless");
+  },
+
   beforeTest: function (test, context) {
     browser.maximizeWindow();
   },
