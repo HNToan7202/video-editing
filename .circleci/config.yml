@@ -14,10 +14,10 @@ jobs:
       - run:
           name: Install GeckoDriver
           command: |
-      wget -N https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz
-      tar -xzf geckodriver-v0.30.0-linux64.tar.gz
-      chmod +x geckodriver
-      sudo mv geckodriver /usr/local/bin/
+              wget -N https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz
+              tar -xzf geckodriver-v0.30.0-linux64.tar.gz
+              chmod +x geckodriver
+              sudo mv geckodriver /usr/local/bin/
       - run:
           name: Configure GeckoDriver
           command: |
