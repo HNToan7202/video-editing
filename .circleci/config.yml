@@ -9,13 +9,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Install Java SDK 17
-          command: |
-            curl -sL https://github.com/AdoptOpenJDK/openjdk17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz | tar xz
-            export JAVA_HOME=$PWD/jdk-17+35
-            export PATH=$JAVA_HOME/bin:$PATH
-            java -version
-      - run:
           name: Test Docker
           command: docker --version
       - run:
@@ -23,13 +16,14 @@ jobs:
           command: npm install
           working_directory: /home/circleci/project/client
           
-      - run:
-          name: Build and push Docker image
-          command: |
-            docker build -t $DOCKERHUB_USERNAME/videodemo:latest .
-            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
-            docker push $DOCKERHUB_USERNAME/videodemo:latest
-          working_directory: /home/circleci/project/client
+#       - run:
+#           name: Build and push Docker image
+#           command: |
+#             docker build -t $DOCKERHUB_USERNAME/videodemo:latest .
+#             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+#             docker push $DOCKERHUB_USERNAME/videodemo:latest
+#           working_directory: /home/circleci/project/client
+          
       - run:
           name: Test
           command: npm run wdio

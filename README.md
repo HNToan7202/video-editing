@@ -2,7 +2,10 @@
   <img src="https://fit.hcmute.edu.vn/Resources/Images/SubDomain/fit/logo-news.png" alt="Example Image">
 </p>
 
+
 <h1 align="center">Nhóm 13 Công Cụ Và Phát Triển PM</h1>
+<h1 align="center">XÂY DỰNG DOCUMENT + QUẢN LÝ DỰ ÁN, KẾ HOẠCH TEST, TEST CASE, DEPLOYMENT CHO HỆ THỐNG
+DASHBOARD XỬ LÝ, PHÂN TÍCH VIDEO</h1>
 <h2 align="right">GVHD : Huỳnh Xuân Phụng</h2>
 
 
