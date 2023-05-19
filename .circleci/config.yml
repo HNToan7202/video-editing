@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Run ChromeDriver
           command: |
-            chromedriver --version
+            chromedriver
             # Thêm các lệnh khác liên quan đến ChromeDriver ở đây
 
 
