@@ -5,7 +5,7 @@ export const config = {
 
   runner: 'local',
   hostname:'localhost',
-  port:9515,
+  port:4444,
   path:'/',
 
   exclude: [],
