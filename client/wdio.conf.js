@@ -1,8 +1,12 @@
-import allure from "allure-commandline";
+// import allure from "allure-commandline";
 export const config = {
-  runner: "local",
 
-  specs: ["./src/test/**/*.js"],
+  specs: ["./src/test/**/TestLogin.js"],
+
+  runner: 'local',
+//   hostname:'localhost',
+//   port:4444,
+//   path:'/',
 
   exclude: [],
 
@@ -26,11 +30,12 @@ export const config = {
     },
   ],
 
+
   logLevel: "info",
 
   bail: 0,
 
-  baseUrl: "http://localhost",
+  baseUrl: "http://localhost",  
 
   waitforTimeout: 10000,
 
@@ -38,8 +43,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
-  //services: ["edgedriver"],
+//   services: ["chromedriver"],
+  services: ["edgedriver"],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -141,6 +146,17 @@ export const config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
+  before: function (capabilities, specs) {
+  // Bật GeckoDriver trước khi chạy bài kiểm tra
+    exec("geckodriver", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Lỗi khi chạy GeckoDriver: ${error}`);
+      } else {
+        console.log(`GeckoDriver đã được bật: ${stdout}`);
+      }
+    });
+  },
+
   beforeTest: function (test, context) {
     browser.maximizeWindow();
   },
@@ -218,22 +234,22 @@ export const config = {
    */
   //onReload: function(oldSessionId, newSessionId) {
   //}
-  onComplete: function () {
-    const reportError = new Error("Could not generate Allure report");
-    const generation = allure(["generate", "allure-results", "--clean"]);
-    return new Promise((resolve, reject) => {
-      const generationTimeout = setTimeout(() => reject(reportError), 5000);
+//   onComplete: function () {
+//     const reportError = new Error("Could not generate Allure report");
+//     const generation = allure(["generate", "allure-results", "--clean"]);
+//     return new Promise((resolve, reject) => {
+//       const generationTimeout = setTimeout(() => reject(reportError), 5000);
 
-      generation.on("exit", function (exitCode) {
-        clearTimeout(generationTimeout);
+//       generation.on("exit", function (exitCode) {
+//         clearTimeout(generationTimeout);
 
-        if (exitCode !== 0) {
-          return reject(reportError);
-        }
+//         if (exitCode !== 0) {
+//           return reject(reportError);
+//         }
 
-        console.log("Allure report successfully generated");
-        resolve();
-      });
-    });
-  },
+//         console.log("Allure report successfully generated");
+//         resolve();
+//       });
+//     });
+//   },
 };
