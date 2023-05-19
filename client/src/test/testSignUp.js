@@ -1,7 +1,8 @@
+import TESTING from "./varlocal.js";
 describe("Sign Up Test Suite", () => {
   // case success
   it("should sign up successfully", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/signUp");
+    await browser.url(TESTING + "/signUp");
     const username = await browser.$("#usernameSignUp");
     const email = await browser.$("#emailSignUp");
     const fullname = await browser.$("#fullNameSignUp");
@@ -21,7 +22,7 @@ describe("Sign Up Test Suite", () => {
 
   // case fail username
   it("should sign up failUsename", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/signUp");
+    await browser.url(TESTING + "/signUp");
     const username = await browser.$("#usernameSignUp");
     const email = await browser.$("#emailSignUp");
     const fullname = await browser.$("#fullNameSignUp");
@@ -43,7 +44,7 @@ describe("Sign Up Test Suite", () => {
 
   //case fail email
   it("should sign up fail email", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/signUp");
+    await browser.url(TESTING + "/signUp");
     const username = await browser.$("#usernameSignUp");
     const email = await browser.$("#emailSignUp");
     const fullname = await browser.$("#fullNameSignUp");
@@ -63,7 +64,7 @@ describe("Sign Up Test Suite", () => {
 
   //case fail password
   it("should sign up fail password", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/signUp");
+    await browser.url(TESTING + "/signUp");
     const username = await browser.$("#usernameSignUp");
     const email = await browser.$("#emailSignUp");
     const fullname = await browser.$("#fullNameSignUp");
@@ -85,7 +86,7 @@ describe("Sign Up Test Suite", () => {
 
   //case fail passwordConfirm
   it("should sign up fail passwordConfirm", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/signUp");
+    await browser.url(TESTING + "/signUp");
     const username = await browser.$("#usernameSignUp");
     const email = await browser.$("#emailSignUp");
     const fullname = await browser.$("#fullNameSignUp");

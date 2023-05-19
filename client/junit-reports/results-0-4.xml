@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Add Video" timestamp="2023-05-18T00:19:39" time="56.424" tests="2" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Add Video"/>
+      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
+      <property name="file" value="file:///E:/video-editing/client/src/test/TestSearchMatch.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Search Video successfully" time="38.599">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestSearchMatch.js:10:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_0_0.win32.Add_Video" name="should Search Video successfully" time="17.763">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Select league name']&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: refresh - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
+COMMAND: takeScreenshot - {}
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Select league name']" because element wasn't found
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestSearchMatch.js:74:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

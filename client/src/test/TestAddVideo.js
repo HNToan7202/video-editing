@@ -1,7 +1,8 @@
+import TESTING from "./varlocal.js";
 describe("Add Video", () => {
   // case success
   it("should Add AddVideo successfully", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    await browser.url(TESTING);
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
@@ -15,9 +16,7 @@ describe("Add Video", () => {
     const TITLE = 'textarea[aria-invalid="false"]';
     const MERGE = "button[type=submit]";
     // thực hiện các bước test
-    await browser.url(
-      "http://ec2-3-92-79-106.compute-1.amazonaws.com/highlight"
-    );
+    await browser.url(TESTING + "/highlight");
 
     await browser.pause(2000);
     await browser.$$(BUTTON)[6].click();
@@ -119,7 +118,7 @@ describe("Add Video", () => {
 
   // // case AddVideo Success no add logo
   it("should Add AddVideo Success no add logo", async () => {
-    // await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    // await browser.url(TESTING);
     // const username = await browser.$("#login-username");
     // await username.setValue("QuangHuy01");
     // const password = await browser.$("#login-password");

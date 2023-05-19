@@ -1,7 +1,8 @@
+import TESTING from "./varlocal.js";
 describe("Add Match", () => {
   // case success
   it("should Add Match successfully", async () => {
-    await browser.url("http://ec2-3-92-79-106.compute-1.amazonaws.com/");
+    await browser.url(TESTING);
     const username = await browser.$("#login-username");
     await username.setValue("QuangHuy01");
     const password = await browser.$("#login-password");
@@ -87,7 +88,7 @@ describe("Add Match", () => {
     expect(browser).toHaveTitle("AddMatch");
   });
 
-  it("should Add Match 2", async () => {
+  it("should Add Match 2 successfully", async () => {
     // tạo biến chứa id của các element
     const BTN_ADD_LEAGUENAME = browser.$("button[type=button]");
     const LEAGUE_NAME = browser.$("input[placeholder='Enter league name']");
@@ -114,7 +115,7 @@ describe("Add Match", () => {
     expect(browser).toHaveTitle("AddMatch");
   });
 
-  it("should Add Match Same Match ", async () => {
+  it("should Add Match Same Match successfully", async () => {
     // tạo biến chứa id của các element
     const BTN_ADD_LEAGUENAME = browser.$("button[type=button]");
     const LEAGUE_NAME = browser.$("input[placeholder='Enter league name']");
