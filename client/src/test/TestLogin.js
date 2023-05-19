@@ -1,5 +1,8 @@
 import TESTING from "./varlocal.js";
 describe("Sign in Test Suite", () => {
+  if("Logged in successfully",() => {
+    browser.url('https://www.google.com.vn/?hl=vi');
+  });
 //   it("Login with wrong username", async () => {
 //     //Đăng nhập sai username
 //     await browser.url(TESTING);
