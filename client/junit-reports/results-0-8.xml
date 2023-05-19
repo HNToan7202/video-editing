@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Delete Match Test Suite" timestamp="2023-05-18T00:21:08" time="38.989" tests="3" failures="3" errors="3" skipped="0">
+  <testsuite name="DeleteVideo Test Suite" timestamp="2023-05-20T02:26:19" time="12.683" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Delete Match Test Suite"/>
-      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
-      <property name="file" value="file:///E:/video-editing/client/src/test/testDeleteMatch.js"/>
+      <property name="suiteName" value="DeleteVideo Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/05TestDeleteVideo.js"/>
     </properties>
-    <testcase classname="chrome.113_0_0_0.win32.Delete_Match_Test_Suite" name="Logged in successfully" time="35.738">
-      <failure/>
-      <error message="Can't call click on element with selector &quot;.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root&quot; because element wasn't found"/>
+    <testcase classname="edge.113_0_1774_42.win32.DeleteVideo_Test_Suite" name="Logged in successfully" time="5.93">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-username"}
 RESULT: undefined
@@ -25,86 +23,83 @@ COMMAND: elementClear - {"elementId":"ELEMENT-2"}
 RESULT: undefined
 COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
 RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-]]></system-out>
-      <system-err><![CDATA[
-Error: Can't call click on element with selector ".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteMatch.js:12:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Delete_Match_Test_Suite" name="DeleteMatch1" time="2.169">
-      <failure/>
-      <error message="Cannot read properties of undefined (reading 'options')"/>
-      <system-out><![CDATA[
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
 RESULT: undefined
 COMMAND: takeScreenshot - {}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"td"}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: Cannot read properties of undefined (reading 'options')
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteMatch.js:21:5)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Delete_Match_Test_Suite" name="DeleteMatch2" time="1.043">
-      <failure/>
-      <error message="Cannot read properties of undefined (reading 'options')"/>
+    <testcase classname="edge.113_0_1774_42.win32.DeleteVideo_Test_Suite" name="DeleteVideo1" time="4.395">
       <system-out><![CDATA[
-COMMAND: takeScreenshot - {}
-COMMAND: findElements - {"using":"css selector","value":"td"}
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/gallery"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: getTitle - {}
 RESULT: undefined
 RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-4"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-default.ant-btn-sm"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-5"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
 COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.DeleteVideo_Test_Suite" name="DeleteVideo2" time="2.342">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-6"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-primary.ant-btn-sm"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-7"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
 COMMAND: deleteSession - {}
 RESULT: undefined
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: Cannot read properties of undefined (reading 'options')
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteMatch.js:35:5)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

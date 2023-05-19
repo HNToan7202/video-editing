@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="UpLoadVideo Test Suite" timestamp="2023-05-18T00:21:10" time="100.836" tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="UpLoadJson Test Suite" timestamp="2023-05-20T02:26:02" time="14.481" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="UpLoadVideo Test Suite"/>
-      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
-      <property name="file" value="file:///E:/video-editing/client/src/test/TestUploadVideo.js"/>
+      <property name="suiteName" value="UpLoadJson Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/04TestUploadJson.js"/>
     </properties>
-    <testcase classname="chrome.113_0_0_0.win32.UpLoadVideo_Test_Suite" name="Logged in successfully" time="26.708">
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="Logged in successfully" time="8.704">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-username"}
 RESULT: undefined
@@ -29,47 +29,33 @@ COMMAND: elementClick - {"elementId":"ELEMENT-3"}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.UpLoadVideo_Test_Suite" name="UpLoadVideo" time="29.59">
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="UpLoadJson1" time="2.414">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/gallery"}
+COMMAND: getTitle - {}
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
 RESULT: undefined
 COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
 RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-5"}
+COMMAND: elementClick - {"elementId":"ELEMENT-20"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"div[role=button]"}
+COMMAND: getTitle - {}
 RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-13"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"li[role=option]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-15"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[type=text]"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-16"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-16","text":"Nơi Này Có Anh"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[type=file]"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-17"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-17","text":"./src/testing/UpLoadVideo/NoiNayCoAnh.mp4"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-21"}
+COMMAND: getTitle - {}
 RESULT: undefined
 COMMAND: takeScreenshot - {}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.UpLoadVideo_Test_Suite" name="UpLoadVideo" time="26.954">
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="UpLoadJson2" time="3.324">
       <system-out><![CDATA[
 COMMAND: getTitle - {}
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/gallery"}
-RESULT: undefined
 RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
@@ -77,61 +63,13 @@ COMMAND: getTitle - {}
 RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-24"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"div[role=button]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-33"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"li[role=option]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-35"}
-RESULT: undefined
-COMMAND: getTitle - {}
 COMMAND: findElement - {"using":"css selector","value":"input[type=file]"}
-COMMAND: executeScript - {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[type=file]"}
-COMMAND: elementClear - {"elementId":"ELEMENT-36"}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-36","text":"E:HCMUTE\\video-editing\\client\\src\testing\\UploadVideo\\NoiNayCoAnh.mp4"}
-RESULT: undefined
-RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
-COMMAND: getTitle - {}
 RESULT: undefined
-COMMAND: getTitle - {}
+COMMAND: elementClear - {"elementId":"ELEMENT-21"}
 RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-41"}
-RESULT: undefined
-COMMAND: takeScreenshot - {}
-RESULT: undefined
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.UpLoadVideo_Test_Suite" name="UpLoadVideo" time="17.563">
-      <system-out><![CDATA[
-COMMAND: getTitle - {}
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/gallery"}
-RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-21","text":"./VietNam_Malay.json"}
 RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
@@ -143,53 +81,7 @@ COMMAND: getTitle - {}
 RESULT: undefined
 COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
 RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-44"}
-RESULT: undefined
-COMMAND: getTitle - {}
-COMMAND: findElements - {"using":"css selector","value":"div[role=button]"}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-53"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"li[role=option]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-55"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[type=text]"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-56"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-56","text":"Nơi Này Có Anh"}
-RESULT: undefined
-COMMAND: getTitle - {}
-COMMAND: findElement - {"using":"css selector","value":"span[title=\"types: MP4\"]"}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-57"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-57","text":"Uploaded Successfully!."}
-RESULT: undefined
-COMMAND: getTitle - {}
-COMMAND: findElement - {"using":"css selector","value":"input[type=file]"}
-COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
-COMMAND: executeScript - {"script":"return (() => {\r\n      const inputElement = document.querySelector(\"input[type=file]\");\r\n      inputElement.style.display = \"block\";\r\n    }).apply(null, arguments)","args":[]}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[type=file]"}
-COMMAND: elementClear - {"elementId":"ELEMENT-58"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-58","text":"./src/testing/UpLoadVideo/NoiNayCoAnh.mp4"}
-COMMAND: elementClick - {"elementId":"ELEMENT-62"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
+COMMAND: elementClick - {"elementId":"ELEMENT-30"}
 RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
@@ -200,10 +92,12 @@ RESULT: undefined
 COMMAND: getTitle - {}
 RESULT: undefined
 COMMAND: takeScreenshot - {}
+COMMAND: getTitle - {}
+RESULT: undefined
 RESULT: undefined
 COMMAND: getTitle - {}
+RESULT: undefined
 COMMAND: deleteSession - {}
-RESULT: undefined
 RESULT: undefined
 ]]></system-out>
     </testcase>

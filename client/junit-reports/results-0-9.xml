@@ -1,189 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="DeleteVideo Test Suite" timestamp="2023-05-18T00:21:08" time="62.002" tests="3" failures="3" errors="3" skipped="0">
+  <testsuite name="Search Match" timestamp="2023-05-20T02:26:36" time="17.953" tests="2" failures="2" errors="2" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="DeleteVideo Test Suite"/>
-      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
-      <property name="file" value="file:///E:/video-editing/client/src/test/testDeleteVideo.js"/>
+      <property name="suiteName" value="Search Match"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/06TestSearchMatch.js"/>
     </properties>
-    <testcase classname="chrome.113_0_0_0.win32.DeleteVideo_Test_Suite" name="Logged in successfully" time="37.838">
+    <testcase classname="edge.113_0_1774_42.win32.Search_Match" name="should Search Video full option successfully" time="3.436">
       <failure/>
-      <error message="Can't call click on element with selector &quot;.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root&quot; because element wasn't found"/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-username"}
 RESULT: undefined
 COMMAND: elementClear - {"elementId":"ELEMENT-1"}
 RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh"}
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#login-password"}
 RESULT: undefined
 COMMAND: elementClear - {"elementId":"ELEMENT-2"}
 RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root"}
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
 RESULT: undefined
 ]]></system-out>
       <system-err><![CDATA[
-Error: Can't call click on element with selector ".MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-78trlr-MuiButtonBase-root-MuiIconButton-root" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteVideo.js:12:5)
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/06TestSearchMatch.js:10:5)
 ]]></system-err>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.DeleteVideo_Test_Suite" name="DeleteVideo1" time="13.744">
+    <testcase classname="edge.113_0_1774_42.win32.Search_Match" name="should Search Video nodata" time="14.496">
       <failure/>
-      <error message="Can't call click on element with selector &quot;.ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous&quot; because element wasn't found"/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Select league name']&quot; because element wasn't found"/>
       <system-out><![CDATA[
 COMMAND: takeScreenshot - {}
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/gallery"}
+COMMAND: refresh - {}
 RESULT: undefined
 RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-]]></system-out>
-      <system-err><![CDATA[
-Error: Can't call click on element with selector ".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteVideo.js:22:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.DeleteVideo_Test_Suite" name="DeleteVideo2" time="10.372">
-      <failure/>
-      <error message="Can't call click on element with selector &quot;.ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous&quot; because element wasn't found"/>
-      <system-out><![CDATA[
-COMMAND: takeScreenshot - {}
-COMMAND: findElement - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous"}
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Select league name']"}
 RESULT: undefined
 COMMAND: takeScreenshot - {}
 COMMAND: deleteSession - {}
 RESULT: undefined
 ]]></system-out>
       <system-err><![CDATA[
-Error: Can't call click on element with selector ".ant-btn.ant-btn-circle.ant-btn-default.ant-btn-icon-only.ant-btn-dangerous" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testDeleteVideo.js:35:5)
+Error: Can't call setValue on element with selector "input[placeholder='Select league name']" because element wasn't found
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/06TestSearchMatch.js:74:5)
 ]]></system-err>
     </testcase>
   </testsuite>

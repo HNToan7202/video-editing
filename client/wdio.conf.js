@@ -2,7 +2,7 @@ import allure from "allure-commandline";
 export const config = {
   runner: "local",
 
-  specs: ["./src/test/**/testUploadJson.js"],
+  specs: ["./src/test/**/*.js"],
 
   exclude: [],
 
@@ -16,9 +16,9 @@ export const config = {
   capabilities: [
     {
       maxInstances: 1,
-      //browserName: "chrome",
+      browserName: "chrome",
       acceptInsecureCerts: true,
-     browserName: "MicrosoftEdge",
+    // browserName: "MicrosoftEdge",
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,
