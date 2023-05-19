@@ -144,12 +144,12 @@ export const config = {
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
   before: function (capabilities, specs) {
-    // Bật ChromeDriver trước khi chạy bài kiểm tra
-    exec("chromedriver --headless", (error, stdout, stderr) => {
+  // Bật GeckoDriver trước khi chạy bài kiểm tra
+    exec("geckodriver --headless", (error, stdout, stderr) => {
       if (error) {
-        console.error(`Lỗi khi chạy ChromeDriver: ${error}`);
+        console.error(`Lỗi khi chạy GeckoDriver: ${error}`);
       } else {
-        console.log(`ChromeDriver đã được bật: ${stdout}`);
+        console.log(`GeckoDriver đã được bật: ${stdout}`);
       }
     });
   },
