@@ -9,6 +9,29 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
+          name: Install ChromeDriver
+          command: |
+            wget -N https://chromedriver.storage.googleapis.com/LATEST_RELEASE
+            export CHROME_DRIVER_VERSION=$(cat LATEST_RELEASE)
+            wget https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip
+            unzip chromedriver_linux64.zip
+            chmod +x chromedriver
+            sudo mv chromedriver /usr/local/bin/
+
+      - run:
+          name: Configure ChromeDriver
+          command: |
+            echo 'export PATH=$PATH:/usr/local/bin' >> $BASH_ENV
+
+      # Chạy ChromeDriver
+      - run:
+          name: Run ChromeDriver
+          command: |
+            chromedriver --version
+            # Thêm các lệnh khác liên quan đến ChromeDriver ở đây
+
+      # Thêm các bước khác để chạy tests hoặc công việc của bạn
+      - run:
           name: Test Docker
           command: docker --version
       - run:
