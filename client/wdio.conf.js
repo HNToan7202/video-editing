@@ -21,8 +21,14 @@ export const config = {
     maxInstances: 5,
     browserName: "chrome",
     acceptInsecureCerts: true,
-  },
-  ],
+    "goog:chromeOptions": {
+      binary: "/path/to/chrome/binary" // Đường dẫn đến Chrome binary trên máy tính của bạn
+    }
+  }
+],
+
+
+
 
   logLevel: "info",
 
