@@ -88,7 +88,7 @@ describe("Add Match", () => {
     expect(browser).toHaveTitle("AddMatch");
   });
 
-  it("should Add Match 2", async () => {
+  it("should Add Match 2 successfully", async () => {
     // tạo biến chứa id của các element
     const BTN_ADD_LEAGUENAME = browser.$("button[type=button]");
     const LEAGUE_NAME = browser.$("input[placeholder='Enter league name']");
@@ -115,7 +115,7 @@ describe("Add Match", () => {
     expect(browser).toHaveTitle("AddMatch");
   });
 
-  it("should Add Match Same Match ", async () => {
+  it("should Add Match Same Match successfully", async () => {
     // tạo biến chứa id của các element
     const BTN_ADD_LEAGUENAME = browser.$("button[type=button]");
     const LEAGUE_NAME = browser.$("input[placeholder='Enter league name']");

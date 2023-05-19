@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Sign Up Test Suite" timestamp="2023-05-18T00:22:02" time="41.061" tests="5" failures="5" errors="5" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign Up Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
+      <property name="file" value="file:///E:/video-editing/client/src/test/testSignUp.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_0_0.win32.Sign_Up_Test_Suite" name="should sign up successfully" time="19.945">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/signUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#usernameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#emailSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#fullNameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#passwordSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#confirmPasswordSignUp"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01123"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"ngoquanghuyw221234@gmail.com"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-3","text":"Ngô Quang Huy"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-4"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-4","text":"Huyvff@111"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-5"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-5","text":"Huyvff@111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testSignUp.js:17:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_0_0.win32.Sign_Up_Test_Suite" name="should sign up failUsename" time="4.564">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/signUp"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#usernameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#emailSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#fullNameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#passwordSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#confirmPasswordSignUp"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-6"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-6","text":"QuangHuy01"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-7"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-7","text":"ngoquanghuyw22123412312@gmail.com"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-8","text":"Ngô Quang Huy"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-9"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-9","text":"Huyvff@111"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-10"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-10","text":"Huyvff@111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testSignUp.js:37:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_0_0.win32.Sign_Up_Test_Suite" name="should sign up fail email" time="4.618">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/signUp"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#usernameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#emailSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#fullNameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#passwordSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#confirmPasswordSignUp"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-11"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-11","text":"QuangHuy01tr"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-12"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-12","text":"ngoquanghuyw22@gmail.com"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-13"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-13","text":"Ngô Quang Huy"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-14"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-14","text":"Huyvff@111"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-15"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-15","text":"Huyvff@111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testSignUp.js:59:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_0_0.win32.Sign_Up_Test_Suite" name="should sign up fail password" time="6.362">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/signUp"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#usernameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#emailSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#fullNameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#passwordSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#confirmPasswordSignUp"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-16"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-16","text":"QuangHuy0gg1"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-17"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-17","text":"ngoquanghuyw22123412312@gmail.com"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-18"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-18","text":"Ngô Quang Huy"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-19"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-19","text":"huyvff111"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-20"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-20","text":"huyvff111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testSignUp.js:79:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_0_0.win32.Sign_Up_Test_Suite" name="should sign up fail passwordConfirm" time="5.484">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/signUp"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#usernameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#emailSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#fullNameSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#passwordSignUp"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#confirmPasswordSignUp"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-21"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-21","text":"QuangHuy01dd"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-22"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-22","text":"ngoquanghuyw22123412312@gmail.com"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-23"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-23","text":"Ngô Quang Huy"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-24"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-24","text":"Huyvff@111"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-25"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-25","text":"huyvff111"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/testSignUp.js:101:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
