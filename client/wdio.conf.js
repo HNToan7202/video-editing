@@ -145,7 +145,7 @@ export const config = {
    */
   before: function (capabilities, specs) {
   // Bật GeckoDriver trước khi chạy bài kiểm tra
-    exec("geckodriver --headless", (error, stdout, stderr) => {
+    exec("geckodriver", (error, stdout, stderr) => {
       if (error) {
         console.error(`Lỗi khi chạy GeckoDriver: ${error}`);
       } else {
