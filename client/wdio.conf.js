@@ -144,9 +144,15 @@ export const config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
-  before: function (capabilities, specs) {
+before: function (capabilities, specs) {
     // Bật ChromeDriver trước khi chạy bài kiểm tra
-    execSync("chromedriver --headless");
+    exec("chromedriver --headless", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Lỗi khi chạy ChromeDriver: ${error}`);
+      } else {
+        console.log(`ChromeDriver đã được bật: ${stdout}`);
+      }
+    });
   },
 
   beforeTest: function (test, context) {
