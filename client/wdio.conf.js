@@ -17,16 +17,11 @@ export const config = {
   // https://docs.saucelabs.com/reference/platforms-configurator
   //
   capabilities: [
-    {
-      maxInstances: 5,
-      browserName: "chrome",
-      acceptInsecureCerts: true,
-      // browserName: "MicrosoftEdge",
-      // // "ms:edgeOptions": {
-      //   args: ["--headless", "--disable-gpu"],
-      //   w3c: false,
-      // },
-    },
+  {
+    maxInstances: 5,
+    browserName: "chrome",
+    acceptInsecureCerts: true,
+  },
   ],
 
   logLevel: "info",
