@@ -19,15 +19,13 @@ export const config = {
   capabilities: [
   {
     maxInstances: 5,
-    browserName: "chrome",
+    browserName: "firefox",
     acceptInsecureCerts: true,
-    "goog:chromeOptions": {
-      binary: "/path/to/chrome/binary" // Đường dẫn đến Chrome binary trên máy tính của bạn
+    "moz:firefoxOptions": {
+      binary: "/path/to/firefox/binary" // Đường dẫn đến Firefox binary trên máy tính của bạn
     }
   }
-],
-
-
+  ],
 
 
   logLevel: "info",
@@ -42,8 +40,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
-  //services: ["edgedriver"],
+//   services: ["chromedriver"],
+  services: ["edgedriver"],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole
