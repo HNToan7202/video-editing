@@ -21,9 +21,6 @@ export const config = {
     maxInstances: 5,
     browserName: "firefox",
     acceptInsecureCerts: true,
-    "moz:firefoxOptions": {
-      binary: "/path/to/firefox/binary" // Đường dẫn đến Firefox binary trên máy tính của bạn
-    }
   }
   ],
 
