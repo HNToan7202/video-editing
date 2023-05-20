@@ -14,20 +14,7 @@ jobs:
       - name: List directory contents
         run: |
           ls
-
-      - name: Switch to Client Directory
-        run: |
           cd D:\a\video-editing\video-editing\client
-          
-      - name: List client
-        run: |
-          ls
+          npm install
+          npx jest Logout.test.js
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Set environment variable
-        run: echo "MY_VARIABLE=example-value" >> $GITHUB_ENV
-
-      - name: Test
-        run: npx jest Logout.test.js
