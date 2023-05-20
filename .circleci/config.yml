@@ -35,15 +35,12 @@ jobs:
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push $DOCKERHUB_USERNAME/videodemoserver:latest
           working_directory: /home/circleci/project/server/video-editing-api
+
+
   test:
-     docker:
+    docker:
       - image: cimg/node:17.0
     steps:
-      - checkout
-      - setup_remote_docker
-      - run:
-          name: Test Docker
-          command: docker --version
       - run:
           name: Install Dependencies
           command: npm install
