@@ -11,6 +11,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: List directory contents
+        run: |
+          dir $GITHUB_WORKSPACE
+
       - name: Switch to Client Directory
         run: |
           cd $GITHUB_WORKSPACE/video-editing/client
