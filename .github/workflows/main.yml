@@ -17,7 +17,11 @@ jobs:
 
       - name: Switch to Client Directory
         run: |
-          cd $GITHUB_WORKSPACE/video-editing/client
+          cd client
+          
+      - name: List client
+        run: |
+          ls
 
       - name: Install dependencies
         run: npm install
