@@ -1,4 +1,18 @@
-import TESTING from "./varlocal.js";
+const { Builder, By,Key } = require('selenium-webdriver');
+const { beforeAll, afterAll, test } = require('@jest/globals');
+const path = require("path");
+const TESTING = "http://ec2-3-93-146-91.compute-1.amazonaws.com";
+jest.setTimeout(100000); // timeout toàn cục
+
+let driver;
+
+beforeAll(async () => {
+    driver = await new Builder().forBrowser('chrome').build();
+});
+
+afterAll(async () => {
+    await driver.quit();
+});
 describe("Search Video", () => {
   // case success
   it("should Search Video successfully", async () => {

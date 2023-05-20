@@ -25,5 +25,4 @@ it("Logged in successfully", async () => {
     await driver.sleep(3000);
     const loginButton = await driver.findElement(By.css("#login-button"));
     await loginButton.click();
-
   });
