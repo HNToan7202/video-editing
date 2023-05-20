@@ -13,7 +13,7 @@ jobs:
 
       - name: List directory contents
         run: |
-          dir $GITHUB_WORKSPACE
+          ls
 
       - name: Switch to Client Directory
         run: |
