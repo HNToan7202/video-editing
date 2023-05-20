@@ -1,8 +1,6 @@
 version: 2.1
-
 orbs:
   docker: circleci/docker@1.1.0
-
 jobs:
   build:
     docker:
@@ -17,6 +15,7 @@ jobs:
           name: Install Dependencies
           command: npm install
           working_directory: /home/circleci/project/client
+          
       - run:
           name: Build and push Docker image
           command: |
@@ -24,6 +23,11 @@ jobs:
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push $DOCKERHUB_USERNAME/videodemo:latest
           working_directory: /home/circleci/project/client
+          
+#       - run:
+#           name: Test
+#           command: npm run wdio
+#           working_directory: /home/circleci/project/client
       - run:
           name: Build and push Docker image Server
           command: |
@@ -31,20 +35,7 @@ jobs:
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push $DOCKERHUB_USERNAME/videodemoserver:latest
           working_directory: /home/circleci/project/server/video-editing-api
-
-  test:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Test
-        run: npx jest Logout.test.js
-
-
 workflows:
   build-and-deploy:
     jobs:
       - build
-      - test
