@@ -28,6 +28,7 @@ jobs:
 #           name: Test
 #           command: npm run wdio
 #           working_directory: /home/circleci/project/client
+
       - run:
           name: Build and push Docker image Server
           command: |
@@ -54,6 +55,7 @@ jobs:
           name: Test
           command: npx jest Logout.test.js
           working_directory: /home/circleci/project/client
+
 
 
 
