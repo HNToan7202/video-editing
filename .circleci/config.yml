@@ -33,18 +33,15 @@ jobs:
           working_directory: /home/circleci/project/server/video-editing-api
 
   test:
-    docker:
-      - image: cimg/node:17.0
+    runs-on: windows-latest
     steps:
-      - checkout
-      - run:
-          name: Install Dependencies
-          command: npm install
-          working_directory: /home/circleci/project/client
-      - run:
-          name: Test
-          command: npx jest Logout.test.js
-          working_directory: /home/circleci/project/client
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Test
+        run: npx jest Logout.test.js
+
 
 workflows:
   build-and-deploy:
