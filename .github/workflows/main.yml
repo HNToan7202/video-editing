@@ -17,7 +17,7 @@ jobs:
       - name: Test
         run: |
           cd client
-          npx jest
+          npx jest --runInBand
 #       - name: Upload artifact
 #         uses: actions/upload-artifact@v2
 #         with:
