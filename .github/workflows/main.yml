@@ -1,4 +1,6 @@
-name: Test
+
+name: Test CI
+
 
 on:
   push:
@@ -11,12 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: List directory contents
+      - name: Install Dependency
         run: |
           cd client
           npm install
-          
-      - name: Auto Testing Tool
+       
+
+      - name: Testing
         run: |
           cd client
           npx jest Logout.test.js
