@@ -38,9 +38,8 @@ jobs:
 
 
   test:
-    executor: windows/default
     docker:
-      - image: circleci/node:16
+      - image: mcr.microsoft.com/windows/servercore:ltsc2019
     steps:
       - checkout
       - setup_remote_docker
@@ -55,6 +54,7 @@ jobs:
           name: Test
           command: npx jest Logout.test.js
           working_directory: /home/circleci/project/client
+
 
 
 workflows:
