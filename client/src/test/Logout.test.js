@@ -1,4 +1,5 @@
 const { Builder, By } = require('selenium-webdriver');
+const firefox = require('selenium-webdriver/firefox');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 
 jest.setTimeout(100000); // timeout toàn cục
@@ -6,13 +7,13 @@ jest.setTimeout(100000); // timeout toàn cục
 let driver;
 
 beforeAll(async () => {
-    driver = await new Builder().forBrowser('chrome').build();
+    const options = new firefox.Options();
+    options.headless(); // Chế độ headless (ẩn trình duyệt)
+    driver = await new Builder().forBrowser('firefox').setFirefoxOptions(options).build();
 });
 
 afterAll(async () => {
-    if (driver) {
-        await driver.quit();
-    }
+    await driver.quit();
 });
 
 it("Logged in successfully", async () => {
