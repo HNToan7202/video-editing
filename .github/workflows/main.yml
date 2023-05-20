@@ -13,7 +13,6 @@ jobs:
 
       - name: List directory contents
         run: |
-          ls
           cd client
           npm install
           npx jest Logout.test.js
