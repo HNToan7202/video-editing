@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
+  <testsuite name="Sign in Test Suite" timestamp="2023-05-20T01:12:02" time="5.944" tests="4" failures="4" errors="4" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign in Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/TestLogin.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login with wrong username" time="5.825">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/window/maximize - {}
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/element - {"using":"css selector","value":"#login-username"}
+COMMAND: GET /session/ff00e57cfeac7d1e938b6b1d704bf062/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestLogin.js:6:27)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login with wrong password" time="0.042">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/window/maximize - {}
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: GET /session/ff00e57cfeac7d1e938b6b1d704bf062/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestLogin.js:16:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login to the wrong account" time="0.036">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/window/maximize - {}
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: GET /session/ff00e57cfeac7d1e938b6b1d704bf062/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestLogin.js:27:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Logged in successfully" time="0.027">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/window/maximize - {}
+COMMAND: POST /session/ff00e57cfeac7d1e938b6b1d704bf062/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: GET /session/ff00e57cfeac7d1e938b6b1d704bf062/screenshot - {}
+COMMAND: DELETE /session/ff00e57cfeac7d1e938b6b1d704bf062 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestLogin.js:38:5)
+=======
   <testsuite name="Sign In Test Suite" timestamp="2023-05-20T02:23:37" time="3.431" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -34,6 +110,7 @@ Error: Your key input contains more than one character: "Enter", only one is all
     at Array.forEach (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/010TestLogout.js:10:5)
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
 ]]></system-err>
     </testcase>
   </testsuite>

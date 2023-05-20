@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
+  <testsuite name="Add Video" timestamp="2023-05-20T01:12:03" time="4.664" tests="5" failures="5" errors="5" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Add Video"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/TestAddVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Add AddVideo successfully" time="4.6">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/window/maximize - {}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/element - {"using":"css selector","value":"#login-username"}
+COMMAND: GET /session/eec99d16eed865c48ab23ee039ee0238/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestAddVideo.js:6:22)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Add AddVideo successfully SameName" time="0.019">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/window/maximize - {}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/refresh - {}
+COMMAND: GET /session/eec99d16eed865c48ab23ee039ee0238/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestAddVideo.js:39:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Add AddVideo Fail Add Title" time="0.008">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/window/maximize - {}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/refresh - {}
+COMMAND: GET /session/eec99d16eed865c48ab23ee039ee0238/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestAddVideo.js:66:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Add AddVideo Success not add logo" time="0.01">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/window/maximize - {}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/refresh - {}
+COMMAND: GET /session/eec99d16eed865c48ab23ee039ee0238/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestAddVideo.js:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Add AddVideo Success no add logo" time="0.017">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/window/maximize - {}
+COMMAND: POST /session/eec99d16eed865c48ab23ee039ee0238/refresh - {}
+COMMAND: GET /session/eec99d16eed865c48ab23ee039ee0238/screenshot - {}
+COMMAND: DELETE /session/eec99d16eed865c48ab23ee039ee0238 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestAddVideo.js:132:5)
+]]></system-err>
+=======
   <testsuite name="Sign in Test Suite" timestamp="2023-05-20T02:23:23" time="9.711" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -138,6 +231,7 @@ RESULT: undefined
 COMMAND: deleteSession - {}
 RESULT: undefined
 ]]></system-out>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
     </testcase>
   </testsuite>
 </testsuites>

@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
+  <testsuite name="Sign In Test Suite" timestamp="2023-05-20T01:12:19" time="1.673" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign In Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/testLogout.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_In_Test_Suite" name="should sign in successfully" time="1.669">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/524d1be43771ea35713d1f33df17ee7a/window/maximize - {}
+COMMAND: POST /session/524d1be43771ea35713d1f33df17ee7a/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: POST /session/524d1be43771ea35713d1f33df17ee7a/element - {"using":"css selector","value":"#login-username"}
+COMMAND: GET /session/524d1be43771ea35713d1f33df17ee7a/screenshot - {}
+COMMAND: DELETE /session/524d1be43771ea35713d1f33df17ee7a - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/testLogout.js:6:22)
+]]></system-err>
+=======
   <testsuite name="Delete Match Test Suite" timestamp="2023-05-20T02:26:58" time="11.351" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -108,6 +137,7 @@ RESULT: undefined
 COMMAND: deleteSession - {}
 RESULT: undefined
 ]]></system-out>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
     </testcase>
   </testsuite>
 </testsuites>

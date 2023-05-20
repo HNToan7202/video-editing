@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
   <testsuite name="UpLoadJson Test Suite" timestamp="2023-05-20T02:26:02" time="14.481" tests="3" failures="0" errors="0" skipped="0">
@@ -103,3 +105,4 @@ RESULT: undefined
     </testcase>
   </testsuite>
 </testsuites>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8

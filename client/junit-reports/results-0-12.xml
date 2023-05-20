@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
   <testsuite name="Add Video" timestamp="2023-05-20T02:27:13" time="15.565" tests="5" failures="5" errors="5" skipped="0">
@@ -102,3 +104,4 @@ Error: Element could not be found
     </testcase>
   </testsuite>
 </testsuites>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8

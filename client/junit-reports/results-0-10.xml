@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuites>
+  <testsuite name="DownloadVideo Test Suite" timestamp="2023-05-20T01:12:12" time="6.011" tests="2" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="DownloadVideo Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/testDownloadVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_126.macosx.DownloadVideo_Test_Suite" name="Logged in successfully" time="5.991">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/62d268b0f688fb34f7f75ca20f610cd5/window/maximize - {}
+COMMAND: POST /session/62d268b0f688fb34f7f75ca20f610cd5/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: POST /session/62d268b0f688fb34f7f75ca20f610cd5/element - {"using":"css selector","value":"#login-username"}
+COMMAND: GET /session/62d268b0f688fb34f7f75ca20f610cd5/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/testDownloadVideo.js:5:22)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.DownloadVideo_Test_Suite" name="DownloadVideo" time="0.017">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/62d268b0f688fb34f7f75ca20f610cd5/window/maximize - {}
+COMMAND: POST /session/62d268b0f688fb34f7f75ca20f610cd5/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/gallery"}
+COMMAND: GET /session/62d268b0f688fb34f7f75ca20f610cd5/screenshot - {}
+COMMAND: DELETE /session/62d268b0f688fb34f7f75ca20f610cd5 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/testDownloadVideo.js:19:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
+=======
 <testsuites/>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8

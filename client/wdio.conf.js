@@ -4,9 +4,15 @@ export const config = {
   specs: ["./src/test/**/TestLogin.js"],
 
   runner: 'local',
+<<<<<<< HEAD
+  hostname:'localhost',
+  port:9515,
+  path:'//',
+=======
 //   hostname:'localhost',
 //   port:4444,
 //   path:'/',
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
 
   exclude: [],
 

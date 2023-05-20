@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
+  <testsuite name="Add Video" timestamp="2023-05-20T01:12:09" time="0.914" tests="3" failures="3" errors="3" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Add Video"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/TestSearchVideo.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Search Video successfully" time="0.874">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/window/maximize - {}
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/element - {"using":"css selector","value":"#login-username"}
+COMMAND: GET /session/856c69fee5d0938e9b4b88e9b84ab4a8/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestSearchVideo.js:6:22)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Search Video successfully" time="0.024">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/window/maximize - {}
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/refresh - {}
+COMMAND: GET /session/856c69fee5d0938e9b4b88e9b84ab4a8/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestSearchVideo.js:62:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Add_Video" name="should Search Video successfully" time="0.011">
+      <failure/>
+      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/window/maximize - {}
+COMMAND: POST /session/856c69fee5d0938e9b4b88e9b84ab4a8/refresh - {}
+COMMAND: GET /session/856c69fee5d0938e9b4b88e9b84ab4a8/screenshot - {}
+COMMAND: DELETE /session/856c69fee5d0938e9b4b88e9b84ab4a8 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestSearchVideo.js:114:5)
+]]></system-err>
+=======
   <testsuite name="UpLoadVideo Test Suite" timestamp="2023-05-20T02:24:37" time="68.282" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -226,6 +287,7 @@ COMMAND: deleteSession - {}
 RESULT: undefined
 RESULT: undefined
 ]]></system-out>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
     </testcase>
   </testsuite>
 </testsuites>
