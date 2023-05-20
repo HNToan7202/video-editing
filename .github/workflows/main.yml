@@ -17,7 +17,7 @@ jobs:
 
       - name: Switch to Client Directory
         run: |
-          cd client
+          cd D:\a\video-editing\video-editing\client
           
       - name: List client
         run: |
