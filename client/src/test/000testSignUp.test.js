@@ -22,7 +22,7 @@ it("should sign up successfully", async () => {
     By.css("#confirmPasswordSignUp")
   );
 
-  await username.sendKeys("QuangHuy01123");
+  await username.sendKeys("QuangHuy03321");
   await email.sendKeys("ngoquanghuyw221234@gmail.com");
   await fullname.sendKeys("Ngô Quang Huy");
   await password.sendKeys("Huyvff@111");
