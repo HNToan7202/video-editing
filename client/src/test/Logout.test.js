@@ -7,7 +7,8 @@ jest.setTimeout(100000); // timeout toàn cục
 let driver;
 
 beforeAll(async () => {
-    const options = new firefox.Options().setBinary('/path/to/firefox-bin'); // Thay thế '/path/to/firefox-bin' bằng đường dẫn thực tế tới tệp nhị phân của Firefox
+    const options = new firefox.Options().setBinary('/path/to/firefox-bin');
+    // Thay thế '/path/to/firefox-bin' bằng đường dẫn thực tế tới tệp nhị phân của Firefox
     driver = await new Builder().forBrowser('firefox').setFirefoxOptions(options).build();
 });
 
