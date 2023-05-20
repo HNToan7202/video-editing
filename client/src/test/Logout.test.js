@@ -10,7 +10,7 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-    await driver.quit();
+    return driver.quit();
 });
 
 
