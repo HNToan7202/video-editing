@@ -1,16 +1,23 @@
-import allure from "allure-commandline";
+// import allure from "allure-commandline";
 export const config = {
 
   specs: ["./src/test/**/TestLogin.js"],
 
   runner: 'local',
+<<<<<<< HEAD
   hostname:'localhost',
   port:9515,
   path:'//',
+=======
+//   hostname:'localhost',
+//   port:4444,
+//   path:'/',
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
 
   exclude: [],
 
-  maxInstances: 5,
+
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -18,16 +25,17 @@ export const config = {
   //
   capabilities: [
     {
-      maxInstances: 5,
+      maxInstances: 1,
       browserName: "chrome",
       acceptInsecureCerts: true,
-      // browserName: "MicrosoftEdge",
+    // browserName: "MicrosoftEdge",
       // // "ms:edgeOptions": {
       //   args: ["--headless", "--disable-gpu"],
       //   w3c: false,
       // },
     },
   ],
+
 
   logLevel: "info",
 
@@ -41,8 +49,8 @@ export const config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
-  //services: ["edgedriver"],
+//   services: ["chromedriver"],
+  services: ["edgedriver"],
   framework: "mocha",
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -144,6 +152,17 @@ export const config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
+  before: function (capabilities, specs) {
+  // Bật GeckoDriver trước khi chạy bài kiểm tra
+    exec("geckodriver", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Lỗi khi chạy GeckoDriver: ${error}`);
+      } else {
+        console.log(`GeckoDriver đã được bật: ${stdout}`);
+      }
+    });
+  },
+
   beforeTest: function (test, context) {
     browser.maximizeWindow();
   },
@@ -221,22 +240,22 @@ export const config = {
    */
   //onReload: function(oldSessionId, newSessionId) {
   //}
-  onComplete: function () {
-    const reportError = new Error("Could not generate Allure report");
-    const generation = allure(["generate", "allure-results", "--clean"]);
-    return new Promise((resolve, reject) => {
-      const generationTimeout = setTimeout(() => reject(reportError), 5000);
+//   onComplete: function () {
+//     const reportError = new Error("Could not generate Allure report");
+//     const generation = allure(["generate", "allure-results", "--clean"]);
+//     return new Promise((resolve, reject) => {
+//       const generationTimeout = setTimeout(() => reject(reportError), 5000);
 
-      generation.on("exit", function (exitCode) {
-        clearTimeout(generationTimeout);
+//       generation.on("exit", function (exitCode) {
+//         clearTimeout(generationTimeout);
 
-        if (exitCode !== 0) {
-          return reject(reportError);
-        }
+//         if (exitCode !== 0) {
+//           return reject(reportError);
+//         }
 
-        console.log("Allure report successfully generated");
-        resolve();
-      });
-    });
-  },
+//         console.log("Allure report successfully generated");
+//         resolve();
+//       });
+//     });
+//   },
 };

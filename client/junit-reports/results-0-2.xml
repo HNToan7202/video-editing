@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
   <testsuite name="Sign in Test Suite" timestamp="2023-05-20T01:12:02" time="5.944" tests="4" failures="4" errors="4" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -74,6 +75,42 @@ from unknown error: web view not found
   (Session info: chrome=113.0.5672.126)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestLogin.js:38:5)
+=======
+  <testsuite name="Sign In Test Suite" timestamp="2023-05-20T02:23:37" time="3.431" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sign In Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/010TestLogout.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.Sign_In_Test_Suite" name="should sign in successfully" time="3.423">
+      <failure/>
+      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/010TestLogout.js:10:5)
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
 ]]></system-err>
     </testcase>
   </testsuite>

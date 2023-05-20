@@ -1,0 +1,108 @@
+<<<<<<< HEAD
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="UpLoadJson Test Suite" timestamp="2023-05-20T02:26:02" time="14.481" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="UpLoadJson Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/04TestUploadJson.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="Logged in successfully" time="8.704">
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="UpLoadJson1" time="2.414">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-20"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.UpLoadJson_Test_Suite" name="UpLoadJson2" time="3.324">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"input[type=file]"}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-21"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-21","text":"./VietNam_Malay.json"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-30"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8

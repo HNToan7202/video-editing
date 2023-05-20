@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
   <testsuite name="Search Match" timestamp="2023-05-20T01:12:02" time="5.361" tests="2" failures="2" errors="2" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -8,9 +9,20 @@
       <property name="file" value="file://./src/test/TestSearchMatch.js"/>
     </properties>
     <testcase classname="chrome.113_0_5672_126.macosx.Search_Match" name="should Search Video full option successfully" time="5.33">
+=======
+  <testsuite name="Add Match" timestamp="2023-05-20T02:23:46" time="45.362" tests="5" failures="5" errors="5" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Add Match"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.Add_Match" name="should Add Match successfully" time="4.237">
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
       <failure/>
       <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=113.0.5672.126)"/>
       <system-out><![CDATA[
+<<<<<<< HEAD
 COMMAND: POST /session/2e52a5e30689962661a8c3cd8457a653/window/maximize - {}
 COMMAND: POST /session/2e52a5e30689962661a8c3cd8457a653/url - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
 RESULT: {}
@@ -42,6 +54,305 @@ from unknown error: web view not found
   (Session info: chrome=113.0.5672.126)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/TestSearchMatch.js:52:5)
+=======
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Your key input contains more than one character: "Enter", only one is allowed though!
+    at Array.forEach (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js:10:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Add_Match" name="should Add Match Miss Leaguename" time="10.076">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter match name']&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Enter match name']" because element wasn't found
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js:51:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Add_Match" name="should Add Match Miss MatchName" time="10.371">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter league name']&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-6"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Enter league name']" because element wasn't found
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js:76:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Add_Match" name="should Add Match 2 successfully" time="10.321">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter league name']&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-8"}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Enter league name']" because element wasn't found
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js:103:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Add_Match" name="should Add Match Same Match successfully" time="10.299">
+      <failure/>
+      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter league name']&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
+COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
+COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-10"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call setValue on element with selector "input[placeholder='Enter league name']" because element wasn't found
+    at async Context.<anonymous> (file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/01TestAddMatch.js:130:5)
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
 ]]></system-err>
     </testcase>
   </testsuite>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
   <testsuite name="Sign In Test Suite" timestamp="2023-05-20T01:12:19" time="1.673" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
@@ -27,6 +28,116 @@ from unknown error: web view not found
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Context.<anonymous> (file:///Users/hoangtoannguyen/HCMUTE/CCPTPM/Documents/video-editing/client/src/test/testLogout.js:6:22)
 ]]></system-err>
+=======
+  <testsuite name="Delete Match Test Suite" timestamp="2023-05-20T02:26:58" time="11.351" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Delete Match Test Suite"/>
+      <property name="capabilities" value="edge.113_0_1774_42.win32"/>
+      <property name="file" value="file:///F:/CNTT/N3/Ky2/Software_tool_and_enviroment/%C4%90A/video-editing/client/src/test/08TestDeleteMatch.js"/>
+    </properties>
+    <testcase classname="edge.113_0_1774_42.win32.Delete_Match_Test_Suite" name="Logged in successfully" time="4.525">
+      <system-out><![CDATA[
+COMMAND: navigateTo - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-username"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-1"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"congthanh"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-password"}
+RESULT: undefined
+COMMAND: elementClear - {"elementId":"ELEMENT-2"}
+RESULT: undefined
+COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"28072002Thanh@"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"svg"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-3"}
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"#login-button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-4"}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Delete_Match_Test_Suite" name="DeleteMatch1" time="4.477">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"td"}
+RESULT: undefined
+COMMAND: findElementFromElement - {"elementId":"ELEMENT-12","using":"css selector","value":"button"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-13"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-22"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="edge.113_0_1774_42.win32.Delete_Match_Test_Suite" name="DeleteMatch2" time="2.324">
+      <system-out><![CDATA[
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"td"}
+RESULT: undefined
+COMMAND: findElementFromElement - {"elementId":"ELEMENT-31","using":"css selector","value":"button"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-32"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: findElements - {"using":"css selector","value":"button[type=button]"}
+RESULT: undefined
+COMMAND: elementClick - {"elementId":"ELEMENT-42"}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: takeScreenshot - {}
+COMMAND: getTitle - {}
+RESULT: undefined
+RESULT: undefined
+COMMAND: getTitle - {}
+RESULT: undefined
+COMMAND: deleteSession - {}
+RESULT: undefined
+]]></system-out>
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
     </testcase>
   </testsuite>
 </testsuites>

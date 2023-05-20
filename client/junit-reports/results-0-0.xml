@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
   <testsuite name="Sign in Test Suite" timestamp="2023-05-20T01:13:21" time="6.573" tests="4" failures="0" errors="0" skipped="0">
@@ -135,3 +136,5 @@ RESULT: {}
     </testcase>
   </testsuite>
 </testsuites>
+=======
+>>>>>>> 9120012c93090c4f1891bcb49dcc16a3f87388a8
