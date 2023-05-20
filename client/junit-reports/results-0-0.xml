@@ -1,344 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Add Match" timestamp="2023-05-18T00:19:39" time="91.101" tests="5" failures="3" errors="3" skipped="0">
+  <testsuite name="Sign in Test Suite" timestamp="2023-05-20T01:13:21" time="6.573" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Add Match"/>
-      <property name="capabilities" value="chrome.113_0_0_0.win32"/>
-      <property name="file" value="file:///E:/video-editing/client/src/test/TestAddMatch.js"/>
+      <property name="suiteName" value="Sign in Test Suite"/>
+      <property name="capabilities" value="chrome.113_0_5672_126.macosx"/>
+      <property name="file" value="file://./src/test/TestLogin.js"/>
     </properties>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Match" name="should Add Match successfully" time="40.104">
-      <failure/>
-      <error message="Your key input contains more than one character: &quot;Enter&quot;, only one is allowed though!"/>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login with wrong username" time="4.582">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"http://ec2-50-19-42-157.compute-1.amazonaws.com/"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#login-username"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-1"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"QuangHuy01"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#login-password"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-2"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"Huyvff@111"}
-RESULT: undefined
-]]></system-out>
-      <system-err><![CDATA[
-Error: Your key input contains more than one character: "Enter", only one is allowed though!
-    at Array.forEach (<anonymous>)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestAddMatch.js:10:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Match" name="should Add Match Miss Leaguename" time="10.256">
-      <failure/>
-      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter match name']&quot; because element wasn't found"/>
-      <system-out><![CDATA[
-COMMAND: takeScreenshot - {}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-]]></system-out>
-      <system-err><![CDATA[
-Error: Can't call setValue on element with selector "input[placeholder='Enter match name']" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestAddMatch.js:51:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Match" name="should Add Match Miss MatchName" time="10.711">
-      <failure/>
-      <error message="Can't call setValue on element with selector &quot;input[placeholder='Enter league name']&quot; because element wasn't found"/>
-      <system-out><![CDATA[
-COMMAND: takeScreenshot - {}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-6"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-]]></system-out>
-      <system-err><![CDATA[
-Error: Can't call setValue on element with selector "input[placeholder='Enter league name']" because element wasn't found
-    at async Context.<anonymous> (file:///E:/video-editing/client/src/test/TestAddMatch.js:76:5)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Match" name="should Add Match 2" time="15.345">
-      <system-out><![CDATA[
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-COMMAND: takeScreenshot - {}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-8"}
-RESULT: undefined
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-10"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-10","text":"V League"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-12"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-12","text":"HAGL vs SHB"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-14"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-14","text":"VTV3"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-16"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-16","text":"127.0.0.1"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-18"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-18","text":"3000"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-7"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-7"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-20"}
-RESULT: undefined
-COMMAND: takeScreenshot - {}
-RESULT: undefined
-COMMAND: refresh - {}
-RESULT: undefined
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/window/maximize - {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/url - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/965FE0D304B84A150051099CCD39B231_element_2/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/965FE0D304B84A150051099CCD39B231_element_2/value - {"text":"congthanh28"}
+RESULT: {"text":"congthanh28"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/965FE0D304B84A150051099CCD39B231_element_6/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/965FE0D304B84A150051099CCD39B231_element_6/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/965FE0D304B84A150051099CCD39B231_element_7/click - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.113_0_0_0.win32.Add_Match" name="should Add Match Same Match" time="14.585">
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login with wrong password" time="0.674">
       <system-out><![CDATA[
-COMMAND: getTitle - {}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter league name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter match name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Channel Name']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter IP']"}
-COMMAND: findElement - {"using":"css selector","value":"input[placeholder='Enter Port']"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=submit]"}
-COMMAND: findElement - {"using":"css selector","value":"button[type=button]"}
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-27"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-21"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-21","text":"V League"}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-22"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-22","text":"HAGL vs SHB"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-23"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-23","text":"VTV"}
-RESULT: undefined
-COMMAND: getTitle - {}
-COMMAND: elementClear - {"elementId":"ELEMENT-24"}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-24","text":"127.0.0.1"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-25"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-25","text":"3000"}
-COMMAND: getTitle - {}
-RESULT: undefined
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-26"}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: refresh - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-RESULT: undefined
-COMMAND: takeScreenshot - {}
-RESULT: undefined
-COMMAND: getTitle - {}
-COMMAND: deleteSession - {}
-RESULT: undefined
-RESULT: undefined
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/window/maximize - {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/url - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/D14181AA8F74893985C70BE750EC0ACD_element_9/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/D14181AA8F74893985C70BE750EC0ACD_element_9/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/D14181AA8F74893985C70BE750EC0ACD_element_13/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/D14181AA8F74893985C70BE750EC0ACD_element_13/value - {"text":"28072002Thanh@1"}
+RESULT: {"text":"28072002Thanh@1"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/D14181AA8F74893985C70BE750EC0ACD_element_14/click - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/screenshot - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Login to the wrong account" time="0.659">
+      <system-out><![CDATA[
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/window/maximize - {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/url - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/1FF28B34B8105A120FF9F04A46F127A1_element_16/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/1FF28B34B8105A120FF9F04A46F127A1_element_16/value - {"text":"congthanh27"}
+RESULT: {"text":"congthanh27"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/1FF28B34B8105A120FF9F04A46F127A1_element_20/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/1FF28B34B8105A120FF9F04A46F127A1_element_20/value - {"text":"28072002Thanh@123"}
+RESULT: {"text":"28072002Thanh@123"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/1FF28B34B8105A120FF9F04A46F127A1_element_21/click - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/screenshot - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_126.macosx.Sign_in_Test_Suite" name="Logged in successfully" time="0.65">
+      <system-out><![CDATA[
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/window/maximize - {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/url - {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+RESULT: {}
+RESULT: {}
+RESULT: {"url":"http://ec2-34-226-247-45.compute-1.amazonaws.com/"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-username"}
+RESULT: {"using":"css selector","value":"#login-username"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/3450BD30DF7E78090B51F30B4855465E_element_23/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/3450BD30DF7E78090B51F30B4855465E_element_23/value - {"text":"congthanh"}
+RESULT: {"text":"congthanh"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-password"}
+RESULT: {"using":"css selector","value":"#login-password"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/3450BD30DF7E78090B51F30B4855465E_element_27/clear - {}
+RESULT: {}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/3450BD30DF7E78090B51F30B4855465E_element_27/value - {"text":"28072002Thanh@"}
+RESULT: {"text":"28072002Thanh@"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/482a6e884e794b73cc93b06e351e682a/element/3450BD30DF7E78090B51F30B4855465E_element_28/click - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/screenshot - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+COMMAND: GET /session/482a6e884e794b73cc93b06e351e682a/title - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+COMMAND: DELETE /session/482a6e884e794b73cc93b06e351e682a - {}
+RESULT: {}
+RESULT: {}
 ]]></system-out>
     </testcase>
   </testsuite>

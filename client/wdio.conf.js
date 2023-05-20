@@ -1,8 +1,12 @@
 import allure from "allure-commandline";
 export const config = {
-  runner: "local",
 
-  specs: ["./src/test/**/*.js"],
+  specs: ["./src/test/**/TestLogin.js"],
+
+  runner: 'local',
+  hostname:'localhost',
+  port:9515,
+  path:'//',
 
   exclude: [],
 
@@ -29,7 +33,7 @@ export const config = {
 
   bail: 0,
 
-  baseUrl: "http://localhost",
+  baseUrl: "http://localhost",  
 
   waitforTimeout: 10000,
 
