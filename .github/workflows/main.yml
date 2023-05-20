@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Switch to Client Directory
-        run: ls $GITHUB_WORKSPACE/client
+        run: ls $GITHUB_WORKSPACE/video-editing/client
       - name: Install dependencies
         run: npm install
       - name: Test
