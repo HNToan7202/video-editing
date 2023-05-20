@@ -46,8 +46,6 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - name: Checkout code
-        uses: actions/checkout@v2
       - run:
           name: Test Docker
           command: docker --version
