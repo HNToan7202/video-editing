@@ -9,8 +9,12 @@ beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
 
-afterAll(async () => {
-    return driver.quit();
+afterAll(() => {
+    return new Promise((resolve, reject) => {
+        driver.quit()
+            .then(() => resolve())
+            .catch((error) => reject(error));
+    });
 });
 
 
