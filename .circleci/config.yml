@@ -37,7 +37,7 @@ jobs:
           working_directory: /home/circleci/project/server/video-editing-api
   test:
     docker:
-      - image: cimg/node:latest
+      - image: node:latest
     steps:
       - checkout
       - setup_remote_docker
