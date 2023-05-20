@@ -7,8 +7,7 @@ jest.setTimeout(100000); // timeout toàn cục
 let driver;
 
 beforeAll(async () => {
-    const options = new firefox.Options();
-    options.headless(); // Chế độ headless (ẩn trình duyệt)
+    const options = new firefox.Options().setBinary('/path/to/firefox-bin'); // Thay thế '/path/to/firefox-bin' bằng đường dẫn thực tế tới tệp nhị phân của Firefox
     driver = await new Builder().forBrowser('firefox').setFirefoxOptions(options).build();
 });
 
@@ -16,7 +15,7 @@ afterAll(async () => {
     await driver.quit();
 });
 
-it("Logged in successfully", async () => {
+test("Logged in successfully", async () => {
     await driver.get("http://ec2-3-93-146-91.compute-1.amazonaws.com");
     const username = await driver.findElement(By.css("#login-username"));
     await username.sendKeys("congthanh");
