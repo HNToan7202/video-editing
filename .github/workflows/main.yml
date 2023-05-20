@@ -1,34 +1,23 @@
-name: Cypress CI
+name: CI/CD
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
-  go-to-client:
+  build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Switch to Client Directory
-      run: cd client
-
-  build:
-    needs: go-to-client
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm install
-    - name: Run All Test 
-      run: npx jest Logout.test.js
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Switch to Client Directory
+        run: cd client
+      - name: Install dependencies
+        run: npm install
+      - name: Test
+        run: npx jest
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Jest Report
+          path: ./reports/html-report
