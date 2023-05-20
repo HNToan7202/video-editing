@@ -14,7 +14,7 @@ jobs:
 
       - name: Build and push Docker image Server
         run: |
-            cd video-editing-api
+            cd video-editing-api/video-editing-api
             docker build -t 81quanghuy/videodemoserver:latest -f video-editing-api/Dockerfile .
             docker login -u 81quanghuy -p huyvff@111
             docker push 81quanghuy/videodemoserver:latest
