@@ -17,7 +17,6 @@ afterAll(() => {
     });
 });
 
-
 it("Logged in successfully", async () => {
     await driver.get("http://ec2-3-93-146-91.compute-1.amazonaws.com");
     const username = await driver.findElement(By.css("#login-username"));
@@ -29,5 +28,4 @@ it("Logged in successfully", async () => {
     await driver.sleep(3000);
     const loginButton = await driver.findElement(By.css("#login-button"));
     await loginButton.click();
-
-  });
+});
