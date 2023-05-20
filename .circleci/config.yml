@@ -38,6 +38,7 @@ jobs:
 
 
   test:
+    executor: windows/default
     docker:
       - image: circleci/node:16
     steps:
