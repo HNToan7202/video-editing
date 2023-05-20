@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  docker: mcr.microsoft.com/windows/servercore:ltsc2019
+  docker: circleci/docker@1.1.0
 jobs:
   build:
     docker:
@@ -37,7 +37,7 @@ jobs:
           working_directory: /home/circleci/project/server/video-editing-api
   test:
     docker:
-      - image: cimg/node:17.0
+      - image: cimg/node:latest
     steps:
       - checkout
       - setup_remote_docker
