@@ -1,6 +1,6 @@
 const { Builder, By } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
-const TESTING = "http://ec2-3-86-80-106.compute-1.amazonaws.com";
+const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
 
 let driver;

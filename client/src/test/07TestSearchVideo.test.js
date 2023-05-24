@@ -1,7 +1,7 @@
 const { Builder, By,Key } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const path = require("path");
-const TESTING = "http://ec2-3-86-80-106.compute-1.amazonaws.com";
+const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
 
 let driver;
@@ -17,9 +17,9 @@ afterAll(async () => {
 it("should Search Video successfully 01", async () => {
   await driver.get(TESTING);
   const username = await driver.findElement(By.css("#login-username"));
-  await username.sendKeys("QuangHuy01");
+  await username.sendKeys("congthanh");
   const password = await driver.findElement(By.css("#login-password"));
-  await password.sendKeys("Huyvff@111");
+  await password.sendKeys("28072002Thanh@");
   const loginButtonError = await driver.findElement(By.css("#login-button"));
   await loginButtonError.click();
   await driver.sleep(3000);
@@ -72,16 +72,16 @@ it("should Search Video successfully 01", async () => {
   const spanElement = await driver.findElement(By.css(SPAN));
   await spanElement.click();
 
-  const checkboxElements = await driver.findElements(By.css(CHECKBOX));
-  await checkboxElements[11].click();
-  const buttonElements = await driver.findElements(By.css(BUTTON));
-  await buttonElements[11].click();
-  const spanElement1 = await driver.findElements(By.css(SPAN));
-  await spanElement1[1].click();
-  const checkboxElements1 = await driver.findElements(By.css(CHECKBOX));
-  await checkboxElements1[13].click();
-  const buttonElements1 = await driver.findElements(By.css(BUTTON));
-  await buttonElements1[13].click();
+  // const checkboxElements = await driver.findElements(By.css(CHECKBOX));
+  // await checkboxElements[11].click();
+  // const buttonElements = await driver.findElements(By.css(BUTTON));
+  // await buttonElements[11].click();
+  // const spanElement1 = await driver.findElements(By.css(SPAN));
+  // await spanElement1[1].click();
+  // const checkboxElements1 = await driver.findElements(By.css(CHECKBOX));
+  // await checkboxElements1[13].click();
+  // const buttonElements1 = await driver.findElements(By.css(BUTTON));
+  // await buttonElements1[13].click();
   await driver.sleep(2000);
 
 });
@@ -139,10 +139,10 @@ it("should Search Video successfully 02", async () => {
   const spanElement = await driver.findElement(By.css(SPAN));
   await spanElement.click();
 
-  const checkboxElements = await driver.findElements(By.css(CHECKBOX));
-  await checkboxElements[11].click();
-  const buttonElements = await driver.findElements(By.css(BUTTON));
-  await buttonElements[11].click();
+  // const checkboxElements = await driver.findElements(By.css(CHECKBOX));
+  // await checkboxElements[11].click();
+  // const buttonElements = await driver.findElements(By.css(BUTTON));
+  // await buttonElements[11].click();
 
   // const spanElement1 = await driver.findElements(By.css(SPAN));
   // await spanElement1[1].click();
@@ -206,17 +206,17 @@ it("should Search Video successfully", async () => {
   const spanElement = await driver.findElement(By.css(SPAN));
   await spanElement.click();
 
-  const checkboxElements = await driver.findElements(By.css(CHECKBOX));
-  await checkboxElements[11].click();
-  const buttonElements = await driver.findElements(By.css(BUTTON));
-  await buttonElements[11].click();
+  // const checkboxElements = await driver.findElements(By.css(CHECKBOX));
+  // await checkboxElements[11].click();
+  // const buttonElements = await driver.findElements(By.css(BUTTON));
+  // await buttonElements[11].click();
 
-  const spanElement1 = await driver.findElements(By.css(SPAN));
-  await spanElement1[1].click();
-  const checkboxElements1 = await driver.findElements(By.css(CHECKBOX));
-  await checkboxElements1[13].click();
-  const buttonElements1 = await driver.findElements(By.css(BUTTON));
-  await buttonElements1[13].click();
+  // const spanElement1 = await driver.findElements(By.css(SPAN));
+  // await spanElement1[1].click();
+  // const checkboxElements1 = await driver.findElements(By.css(CHECKBOX));
+  // await checkboxElements1[13].click();
+  // const buttonElements1 = await driver.findElements(By.css(BUTTON));
+  // await buttonElements1[13].click();
   await driver.sleep(2000);
 
 });
