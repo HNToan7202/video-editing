@@ -4,7 +4,7 @@ const { beforeAll, afterAll, test } = require('@jest/globals');
 jest.setTimeout(100000); // timeout toàn cục
 
 let driver;
-const TESTING = "http://ec2-52-200-144-98.compute-1.amazonaws.com";
+const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
