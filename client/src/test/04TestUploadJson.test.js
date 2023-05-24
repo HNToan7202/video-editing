@@ -25,6 +25,29 @@ it("Logged in successfully", async () => {
   await loginButton.click();
     await driver.sleep(3000);
 
+     // tạo biến chứa id của các element
+  const BTN_ADD_LEAGUENAME = await driver.findElement(By.css("button[type=button]"));
+  const LEAGUE_NAME = await driver.findElement(By.css("input[placeholder='Enter league name']"));
+  const MATCH_NAME = await driver.findElement(By.css("input[placeholder='Enter match name']"));
+  const CHANNEL_NAME = await driver.findElement(By.css("input[placeholder='Enter Channel Name']"));
+  const IP = await driver.findElement(By.css("input[placeholder='Enter IP']"));
+  const PORT = await driver.findElement(By.css("input[placeholder='Enter Port']"));
+  const SAVE_BTN = await driver.findElement(By.css("button[type=submit]"));
+  
+  // thực hiện các bước test
+  await BTN_ADD_LEAGUENAME.click();
+  await LEAGUE_NAME.sendKeys("V League");
+  await MATCH_NAME.sendKeys("HAGL vs SHB");
+  //await driver.findElement(By.css(TIME)).sendKeys("");
+  await CHANNEL_NAME.sendKeys("VTV");
+  await IP.sendKeys("127.0.0.1");
+  await PORT.sendKeys("3000");
+  await SAVE_BTN.click();
+  await driver.sleep(3000);
+  await driver.navigate().refresh();
+  await driver.sleep(3000);
+
+
   });
 
   

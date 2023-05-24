@@ -1,0 +1,30 @@
+name: Client Build Docker
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Test Docker
+        run: |
+          cd client
+          docker --version
+
+      - name: Install Dependencies
+        run: |
+          cd client
+          npm install
+
+      - name: Build and push Docker image Client
+        run: |
+          cd client
+          docker build -t 81quanghuy/videodemo:latest .
+          docker login -u 81quanghuy -p huyvff@111
+          docker push 81quanghuy/videodemo:latest

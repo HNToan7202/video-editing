@@ -13,11 +13,12 @@
     "@mui/material": "^5.5.1",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "allure-commandline": "^2.21.0",
     "antd": "^4.19.2",
     "axios": "^0.26.1",
     "file-saver": "^2.0.5",
     "immutability-helper": "latest",
-    "jest-html-reporter": "^3.9.0",
+    "jest": "^27.5.1",
     "js-cookie": "^3.0.1",
     "js-file-download": "^0.4.12",
     "query-string": "^7.1.1",
@@ -34,14 +35,15 @@
     "react-scripts": "5.0.0",
     "react-scroll-to-top": "^1.0.8",
     "react-share": "^4.4.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "selenium-webdriver": "^4.9.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "wdio": "wdio run ./wdio.conf.js",
     "test": "react-scripts test",
-    "test1": "wdio",
     "eject": "react-scripts eject",
     "TestCaseStartW": "npx wdio ./wdio.conf.js --spec  ./src/testing/testcase/TestCaseLogin/TWM.js",
     "TestSignUp": "npx wdio wdio.conf.js --spec ./src/testing/testcase/TestCaseSignUp/testSignUp.js"
@@ -72,11 +74,9 @@
     ]
   },
   "devDependencies": {
-    "jest": "^27.5.1",
-    "jest-html-reporters": "^3.1.4",
-    "selenium-webdriver": "^4.9.2",
-    "wdio-chromedriver-service": "^8.1.1",
-    "wdio-edgedriver-service": "^2.1.2",
-    "wdio-geckodriver-service": "^4.1.2"
+    "chromedriver": "^112.0.0",
+    "edgedriver": "^4.17134.1",
+    "geckodriver": "^3.2.0",
+    "jest-html-reporters": "^3.1.4"
   }
 }
