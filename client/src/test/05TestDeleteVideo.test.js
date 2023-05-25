@@ -1,7 +1,7 @@
 const { Builder, By } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const path = require("path");
-const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
+const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
 
 let driver;
@@ -22,7 +22,6 @@ it("Logged in successfully", async () => {
   const loginButton = await driver.findElement(By.css("#login-button"));
   await loginButton.click();
     await driver.sleep(3000);
-
   });
   it("DeleteVideo1", async () => {
     await driver.get(TESTING + "/gallery");
@@ -42,7 +41,6 @@ it("Logged in successfully", async () => {
     await cancelButton.click();
     await driver.sleep(1000);
   });
-  
   it("DeleteVideo2", async () => {
     const deleteButton = await driver.findElement(
       By.css(

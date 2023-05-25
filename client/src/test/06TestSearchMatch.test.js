@@ -1,15 +1,12 @@
 const { Builder, By,Key } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const path = require("path");
-const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
+const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
-
 let driver;
-
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
-
 afterAll(async () => {
     await driver.quit();
 });
@@ -22,7 +19,6 @@ it("should Search Video full option successfully", async () => {
   const loginButtonError = await driver.findElement(By.css("#login-button"));
   await loginButtonError.click();
   await driver.sleep(4000);
-
   // tạo biến chứa id của các element
   const SEARCH = "button[type=submit]";
   const BUTTON_OPEN = "button[title=Open]";
@@ -30,10 +26,8 @@ it("should Search Video full option successfully", async () => {
   const INPUT_DATE = "input[type=tel]";
   const LEAGUE_NAME = "input[placeholder='Select league name']";
   const EVENT_NAME = "input[placeholder='Select Event Name']";
-
   // thực hiện các bước test
   await driver.get(TESTING + "/highlight");
-
   const openButton = await driver.findElement(By.css(BUTTON));
   await openButton.click();
   await driver.sleep(1000);
@@ -41,7 +35,6 @@ it("should Search Video full option successfully", async () => {
   await optionButton[12].click();
   const inputDate = await driver.findElements(By.css(INPUT_DATE));
   await inputDate[0].sendKeys("01/05/2023");
-
   await driver.sleep(2000);
   const closeButton = await driver.findElements(By.css(BUTTON));
   await closeButton[1].click();
@@ -50,19 +43,16 @@ it("should Search Video full option successfully", async () => {
   await optionButton2[40].click();
   const inputDate2 = await driver.findElements(By.css(INPUT_DATE));
   await inputDate2[1].sendKeys("30/05/2023");
-
   const leagueName = await driver.findElement(By.css(LEAGUE_NAME));
   await leagueName.sendKeys("V League");
   await driver.sleep(1000);
   await driver.actions().sendKeys(Key.ARROW_DOWN).perform();
   await driver.actions().sendKeys(Key.ENTER).perform();
-
   const eventName = await driver.findElement(By.css(EVENT_NAME));
   await eventName.sendKeys("highlight");
   await driver.sleep(1000);
   await driver.actions().sendKeys(Key.ARROW_DOWN).perform();
   await driver.actions().sendKeys(Key.ENTER).perform();
-
   const searchButton = await driver.findElement(By.css(SEARCH));
   await searchButton.click();
   await driver.sleep(3000);
@@ -70,7 +60,6 @@ it("should Search Video full option successfully", async () => {
 it("should Search Video nodata", async () => {
   await driver.navigate().refresh();
   await driver.sleep(4000);
-
   // tạo biến chứa id của các element
   const SEARCH = "button[type=submit]";
   const BUTTON_OPEN = "button[title=Open]";
@@ -78,20 +67,17 @@ it("should Search Video nodata", async () => {
   const INPUT_DATE = "input[type=tel]";
   const LEAGUE_NAME = "input[placeholder='Select league name']";
   const EVENT_NAME = "input[placeholder='Select Event Name']";
-
   // thực hiện các bước test
   const leagueName = await driver.findElement(By.css(LEAGUE_NAME));
   await leagueName.sendKeys("V League");
   await driver.sleep(1000);
   await driver.actions().sendKeys(Key.ARROW_DOWN).perform();
   await driver.actions().sendKeys(Key.ENTER).perform();
-
   const eventName = await driver.findElement(By.css(EVENT_NAME));
   await eventName.sendKeys("highlight");
   await driver.sleep(1000);
   await driver.actions().sendKeys(Key.ARROW_DOWN).perform();
   await driver.actions().sendKeys(Key.ENTER).perform();
-
   const searchButton = await driver.findElement(By.css(SEARCH));
   await searchButton.click();
   await driver.sleep(3000);
