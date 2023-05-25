@@ -2,13 +2,10 @@ const { Builder, By } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
-
 let driver;
-
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
-
 afterAll(async () => {
     await driver.quit();
 });
@@ -21,7 +18,6 @@ it("should sign up successfully", async () => {
   const passwordConfirm = await driver.findElement(
     By.css("#confirmPasswordSignUp")
   );
-
   await username.sendKeys("QuangHuy03321");
   await email.sendKeys("ngoquanghuyw221234@gmail.com");
   await fullname.sendKeys("Ngô Quang Huy");
@@ -60,7 +56,6 @@ it("should sign up fail email", async () => {
   const passwordConfirm = await driver.findElement(
   By.css("#confirmPasswordSignUp")
   );
-  
   await username.sendKeys("QuangHuy01tr");
   await email.sendKeys("ngoquanghuyw22@gmail.com");
   await fullname.sendKeys("Ngô Quang Huy");
@@ -80,7 +75,6 @@ it("should sign up fail email", async () => {
   const passwordConfirm = await driver.findElement(
   By.css("#confirmPasswordSignUp")
   );
-  
   await username.sendKeys("QuangHuy0gg1");
   await email.sendKeys("ngoquanghuyw22123412312@gmail.com");
   await fullname.sendKeys("Ngô Quang Huy");
@@ -101,7 +95,6 @@ it("should sign up fail email", async () => {
   const passwordConfirm = await driver.findElement(
   By.css("#confirmPasswordSignUp")
   );
-  
   await username.sendKeys("QuangHuy01dd");
   await email.sendKeys("ngoquanghuyw22123412312@gmail.com");
   await fullname.sendKeys("Ngô Quang Huy");
@@ -109,5 +102,4 @@ it("should sign up fail email", async () => {
   await passwordConfirm.sendKeys("huyvff111");
   const BUTTON = await driver.findElement(By.css("button[type=submit]"));
   await BUTTON.click();
-
   });
