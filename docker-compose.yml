@@ -8,3 +8,16 @@ services:
       target: production
     ports:
       - "5002:80"
+version: '3'
+services:
+  server:
+    build: ./path/to/server
+    ports:
+      - 8080:8080
+  client:
+    build: ./path/to/client
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_BASE_API_URL= SERVER/api;
+      - REACT_APP_BASE_NOTI_URL = SERVER/noti;
