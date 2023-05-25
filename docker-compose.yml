@@ -11,13 +11,13 @@
 version: '3'
 services:
   server:
-    build: ./path/to/server
+    build: ./server
     ports:
       - 8080:8080
   client:
-    build: ./path/to/client
+    build: ./client
     ports:
       - 3000:3000
     environment:
-      - REACT_APP_BASE_API_URL= SERVER/api;
-      - REACT_APP_BASE_NOTI_URL = SERVER/noti;
+      - REACT_APP_BASE_API_URL= http://54.221.73.168/api;
+      - REACT_APP_BASE_NOTI_URL = http://54.221.73.168/noti;
