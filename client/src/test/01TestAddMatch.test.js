@@ -2,14 +2,10 @@ const { Builder, By } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
-
 let driver;
-
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
-
-
 afterAll(async () => {
     await driver.quit();
 });
@@ -42,7 +38,6 @@ it("should Add Match successfully", async () => {
   await driver.sleep(3000);
   await driver.navigate().refresh();
   await driver.sleep(3000);
-  
   });
   it("should Add Match Miss Leaguename", async () => {
     const BTN_ADD_LEAGUENAME = await driver.findElement(By.css("button[type=button]"));
@@ -60,7 +55,6 @@ it("should Add Match successfully", async () => {
     await driver.sleep(3000);
     await driver.navigate().refresh();
     await driver.sleep(3000);
-
   });
   it("should Add Match Miss MatchName", async () => {
     const BTN_ADD_LEAGUENAME = await driver.findElement(By.css("button[type=button]"));
@@ -80,7 +74,6 @@ it("should Add Match successfully", async () => {
     await driver.sleep(3000);
     await driver.navigate().refresh();
     await driver.sleep(3000);
-
   });
   it("should Add Match 2 successfully", async () => {
    // tạo biến chứa id của các element

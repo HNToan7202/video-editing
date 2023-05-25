@@ -2,17 +2,13 @@ const { Builder, By } = require('selenium-webdriver');
 const { beforeAll, afterAll, test } = require('@jest/globals');
 const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
-
 let driver;
-
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
-
 afterAll(async () => {
     await driver.quit();
 });
-
 it("Logged in successfully", async () => {
   await driver.get(TESTING);
   const username = await driver.findElement(By.css("#login-username"));
@@ -22,9 +18,7 @@ it("Logged in successfully", async () => {
   const loginButton = await driver.findElement(By.css("#login-button"));
   await loginButton.click();
     await driver.sleep(3000);
-
   });
- 
   it("DownloadVideo", async () => {
   await driver.get(TESTING + "/gallery");
   await driver.sleep(2000);
