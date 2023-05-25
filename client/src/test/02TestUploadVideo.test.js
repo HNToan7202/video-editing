@@ -1,15 +1,12 @@
 const { Builder, By } = require('selenium-webdriver');
 const path = require("path");
 const { beforeAll, afterAll, test } = require('@jest/globals');
-const TESTING = "http://ec2-54-227-147-35.compute-1.amazonaws.com";
+const TESTING = "http://ec2-3-82-125-96.compute-1.amazonaws.com";
 jest.setTimeout(100000); // timeout toàn cục
-
 let driver;
-
 beforeAll(async () => {
     driver = await new Builder().forBrowser('chrome').build();
 });
-
 afterAll(async () => {
     await driver.quit();
 });
@@ -30,14 +27,11 @@ await driver.sleep(3000);
 it("UpLoadVideo Fail", async () => {
   await driver.get(TESTING + "/gallery");
   await driver.sleep(2000);
-
   const BUTTON = "button[type=button]";
   const TYPE = "div[role=button]";
   const INPUT_TEXT = "input[type=text]";
   const LI = "li[role=option]";
-
   const TYPE_INPUT = 'span[title="types: MP4"]';
-
   const buttons = await driver.findElements(By.css(BUTTON));
   await buttons[1].click();
   const types = await driver.findElements(By.css(TYPE));
@@ -46,14 +40,6 @@ it("UpLoadVideo Fail", async () => {
   await lis[1].click();
   const inputElement1 = await driver.findElement(By.css(INPUT_TEXT));
   await inputElement1.sendKeys("NoiNayCoAnh.mp4");
-
-  // await driver.executeScript(
-  //   "arguments[0].style.display = 'block';",
-  //   inputElement
-  // );
-  // await inputElement.sendKeys(
-  //   path.resolve("./src/testing/UpLoadVideo/NoiNayCoAnh.mp4")
-  // );
   await driver.sleep(2000);
   const buttons2 = await driver.findElements(By.css(BUTTON));
   await buttons2[3].click();
@@ -63,7 +49,6 @@ it("UpLoadVideo Fail", async () => {
 it("UpLoadVideo", async () => {
   await driver.get(TESTING + "/gallery");
   await driver.sleep(2000);
-
   const BUTTON = "button[type=button]";
   const TYPE = "div[role=button]";
   const INPUT_TEXT = "input[type=text]";
