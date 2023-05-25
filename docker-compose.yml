@@ -20,4 +20,4 @@ services:
       - 3000:3000
     environment:
       - REACT_APP_BASE_API_URL= http://54.221.73.168/api;
-      - REACT_APP_BASE_NOTI_URL = http://54.221.73.168/noti;
+      - REACT_APP_BASE_NOTI_URL= http://54.221.73.168/noti;
